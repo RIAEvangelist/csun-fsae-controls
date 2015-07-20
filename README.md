@@ -2,4 +2,4 @@
 This is just a prototype to get things started.
 
 
-This project is licesnced with the [https://github.com/RIAEvangelist/csun-fsae-controls/blob/master/license.md](DBAD)
+This project is licensed with the [DBAD](https://github.com/RIAEvangelist/csun-fsae-controls/blob/master/license.md) Public license.
