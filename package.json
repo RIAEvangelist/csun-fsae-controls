@@ -1,0 +1,27 @@
+{
+  "name": "csun-fsae-controls",
+  "version": "0.0.1",
+  "description": "control and data acquisition for CSUN fsae race car",
+  "main": "fsaeCar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RIAEvangelist/csun-fsae-controls.git"
+  },
+  "keywords": [
+    "fsae",
+    "CSUN",
+    "race",
+    "car",
+    "data",
+    "acquisition"
+  ],
+  "author": "brandon@diginow.it",
+  "license": "DBAD",
+  "bugs": {
+    "url": "https://github.com/RIAEvangelist/csun-fsae-controls/issues"
+  },
+  "homepage": "https://github.com/RIAEvangelist/csun-fsae-controls"
+}
