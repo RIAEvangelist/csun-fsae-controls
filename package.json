@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/RIAEvangelist/csun-fsae-controls/issues"
   },
-  "homepage": "https://github.com/RIAEvangelist/csun-fsae-controls"
+  "homepage": "https://github.com/RIAEvangelist/csun-fsae-controls",
+  "dependencies": {
+    "phidgetapi": "^1.0.1"
+  }
 }
