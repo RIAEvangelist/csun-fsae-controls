@@ -1,37 +1,58 @@
 var phidget = require('phidgetapi').phidget;
 
-var IK888=new phidget();
+var IK888a=new phidget();
+var IK888b=new phidget();
 
-IK888.on(
+IK888a.on(
     "error",
-    function(data){
-        console.log('error ', data);
-    }
+    errorHandler
 );
 
-IK888.on(
+IK888b.on(
+    "error",
+    errorHandler
+);
+
+IK888a.on(
     'phidgetReady',
-    function(){
-        console.log('phidget ready');
-        console.log(phidget.data);
-
-        IK888.on(
-            'changed',
-            update
-        );
-    }
+    readyHandlerA
 );
 
-function update(data){
+IK888b.on(
+    'phidgetReady',
+    readyHandlerB
+);
+
+function updateHandler(data){
     console.log('phidget state changed');
     console.log('data ',data);
+}
+
+function readyHandlerA(){
+    console.log('phidget A ready');
+    console.log(IK888a.data);
+
+    IK888a.on(
+        'changed',
+        updateHandler
+    );
+}
+
+function readyHandlerB(){
+    console.log('phidget B ready');
+    console.log(IK888b.data);
+}
+
+function errorHandler(data){
+    console.log('error ', data);
 }
 
 /*
 * Connect to Phidget
 */
-IK888.connect(
+IK888a.connect(
     {
-        type    : 'PhidgetInterfaceKit'
+        type    : 'PhidgetInterfaceKit',
+        boardID : 115576
     }
 );
