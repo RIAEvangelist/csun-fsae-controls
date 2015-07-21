@@ -5,7 +5,7 @@ var IK888=new phidget();
 IK888.on(
     "error",
     function(data){
-        console.log('error ',data);
+        console.log('error ', data);
     }
 );
 
@@ -15,14 +15,6 @@ IK888.on(
         console.log('phidget ready');
         console.log(phidget.data);
 
-        IK888.set(
-            {
-                type:'Output',
-                key:'0',
-                value:'1'
-            }
-        );
-
         IK888.on(
             'changed',
             update
@@ -30,31 +22,9 @@ IK888.on(
     }
 );
 
-var update=function(data){
+function update(data){
     console.log('phidget state changed');
     console.log('data ',data);
-
-    if(data.type=='Sensor'){
-        IK888.set(
-            {
-                type:'Output',
-                key:'0',
-                value:'1'
-            }
-        );
-        setTimeout(
-            function(){
-                phidget.set(
-                    {
-                        type:'Output',
-                        key:'0',
-                        value:'0'
-                    }
-                );
-            },
-            200
-        );
-    }
 }
 
 /*
