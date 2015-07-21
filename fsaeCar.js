@@ -26,6 +26,16 @@ IK888b.on(
 function updateHandler(data){
     console.log('phidget state changed');
     console.log('data ',data);
+    data.boardType='IK888';
+    data.timeStamp=new Date().getTime();
+    fs.appendFile(
+        'message.txt',
+        '\n'+JSON.stringify(data),
+        function (err) {
+            if (err) throw err;
+            console.log('The "data to append" was appended to file!');
+        }
+    );
 }
 
 function readyHandlerA(){
