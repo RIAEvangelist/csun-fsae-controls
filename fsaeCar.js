@@ -1,4 +1,5 @@
 var phidget = require('phidgetapi').phidget;
+var fs=require('fs');
 
 var IK888a=new phidget();
 var IK888b=new phidget();
