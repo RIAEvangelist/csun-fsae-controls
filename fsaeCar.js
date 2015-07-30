@@ -63,7 +63,6 @@ function errorHandler(data){
 */
 IK888a.connect(
     {
-        type    : 'PhidgetInterfaceKit',
-        boardID : 115576
+        type    : 'PhidgetInterfaceKit'
     }
 );
