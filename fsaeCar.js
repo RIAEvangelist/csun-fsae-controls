@@ -20,6 +20,11 @@ GPS.on(
     readyHandlerG
 );
 
+GPS.on(
+    "error",
+    errorHandler
+);
+
 
 
 function updateHandler(data) {
@@ -40,7 +45,7 @@ function updateHandler(data) {
 function updateHandlerGPS(data){
     console.log('phidget state changed');
     console.log('data ',data);
-    data.boardType='GPS';
+    data.boardType='PhidgerGPS';
     data.timeStamp=new Date().getTime();
     fs.appendFile(
         'GPSDATA.txt',
