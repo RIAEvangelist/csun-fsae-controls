@@ -1,28 +1,20 @@
 var phidget = require('phidgetapi').phidget;
 var fs=require('fs');
 
-var IK888a=new phidget();
-var IK888b=new phidget();
+var IK888=new phidget();
 
-IK888a.on(
+
+IK888.on(
     "error",
     errorHandler
 );
 
-IK888b.on(
-    "error",
-    errorHandler
-);
-
-IK888a.on(
+IK888.on(
     'phidgetReady',
     readyHandlerA
 );
 
-IK888b.on(
-    'phidgetReady',
-    readyHandlerB
-);
+
 
 function updateHandler(data){
     console.log('phidget state changed');
@@ -41,18 +33,14 @@ function updateHandler(data){
 
 function readyHandlerA(){
     console.log('phidget A ready');
-    console.log(IK888a.data);
+    console.log(IK888.data);
 
-    IK888a.on(
+    IK888.on(
         'changed',
         updateHandler
     );
 }
 
-function readyHandlerB(){
-    console.log('phidget B ready');
-    console.log(IK888b.data);
-}
 
 function errorHandler(data){
     console.log('error ', data);
@@ -61,7 +49,7 @@ function errorHandler(data){
 /*
 * Connect to Phidget
 */
-IK888a.connect(
+IK888.connect(
     {
         type    : 'PhidgetInterfaceKit'
     }
