@@ -29,7 +29,8 @@ GPS.on(
 
 function updateHandler(data) {
     console.log('phidget state changed');
-    console.log('data ', data);
+    console.log('data ', data, '\n');
+    console.log('data.value', value,'\n');
     data.boardType = 'IK888';
     data.timeStamp = new Date().getTime();
     fs.appendFile(
