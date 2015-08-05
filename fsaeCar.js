@@ -1,8 +1,8 @@
 var phidget = require('phidgetapi').phidget;
-var fs=require('fs');
+var fs = require('fs');
 
-var IK888=new phidget();
-var GPS=new phidget();
+var IK888 = new phidget();
+var GPS = new phidget();
 
 
 IK888.on(
@@ -22,16 +22,16 @@ GPS.on(
 
 
 
-function updateHandler(data){
+function updateHandler(data) {
     console.log('phidget state changed');
-    console.log('data ',data);
-    data.boardType='IK888';
-    data.timeStamp=new Date().getTime();
+    console.log('data ', data);
+    data.boardType = 'IK888';
+    data.timeStamp = new Date().getTime();
     fs.appendFile(
         'message.txt',
         '\n'+JSON.stringify(data),
         function (err) {
-            if (err) throw err;
+            if (err)throw err;
             console.log('The "data to append" was appended to file!');
         }
     );
@@ -43,7 +43,7 @@ function updateHandlerGPS(data){
     data.boardType='GPS';
     data.timeStamp=new Date().getTime();
     fs.appendFile(
-        'message.txt',
+        'GPSDATA.txt',
         '\n'+JSON.stringify(data),
         function (err) {
             if (err) throw err;
@@ -52,7 +52,7 @@ function updateHandlerGPS(data){
     );
 }
 
-function readyHandlerA(){
+function readyHandlerA() {
     console.log('phidget A ready');
     console.log(IK888.data);
 
@@ -62,7 +62,7 @@ function readyHandlerA(){
     );
 }
 
-function readyHandlerG(){
+function readyHandlerG() {
     console.log('GPS Online');
     console.log(GPS.data);
 
