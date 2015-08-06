@@ -44,10 +44,10 @@ function updateHandler(data) {
     data.timeStamp = new Date().getTime();
     fs.appendFile(
         'message.txt',
-        '\n'+JSON.stringify(data.value)+'   '+JSON.stringify(data.timeStamp),
+        '\n'+data.key,
         function (err) {
             if (err)throw err;
-            console.log('The "data to append" was appended to file!');
+            console.log('logged');
         }
     );
 }
