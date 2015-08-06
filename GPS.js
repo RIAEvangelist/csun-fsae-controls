@@ -46,10 +46,10 @@ GPS.connect(
 
 /*
  * an example of how to see the data being transferred to and from the phidget
- */
+ *
  GPS.connect(
       {
           rawLog:true
        }
   );
-
+*/
