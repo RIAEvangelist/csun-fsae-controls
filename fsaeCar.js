@@ -1,5 +1,6 @@
 var phidget = require('phidgetapi').phidget;
 var fs = require('fs');
+var util = require('util');
 
 var IK888 = new phidget();
 var GPS = new phidget();
@@ -65,18 +66,61 @@ function readyHandlerG() {
 }
 
 function updateHandlerGPS(data){
-    console.log('phidget state changed');
-    console.log('data',data);
+    
+    switch(data.key){
+        case 'Position' :
+            var location=data.Position.split('/');
+            data.Position={
+                lat:Number(location[0]),
+                lon:Number(location[1]),
+                alt:Number(location[2])
+            };
+            break;
+        case 'Velocity' :
+            data.Velocity=Number(data.Velocity);
+            break;
+        case 'Heading' :
+            data.Heading=Number(data.Heading);
+            break;
+        case "DateTime":
+            var dateInfo = data.DateTime.split('/');
+            date = new Date();
+            date.setUTCFullYear(dateInfo[0], dateInfo[1]-1, dateInfo[2]);
+            date.setUTCHours(dateInfo[3], dateInfo[4], dateInfo[5], dateInfo[6]);
+            data.DateTime={
+                full:date,
+                year:Number(dateInfo[0]),
+                month:Number(dateInfo[1]),
+                day:Number(dateInfo[3]),
+                hour:Number(dateInfo[4]),
+                min:Number(dateInfo[5]),
+                sec:Number(dateInfo[6])
+            };
+            break;
+    }
     data.boardType='PhidgetGPS';
-    data.timeStamp=new Date().getTime();
-    fs.appendFile(
-        'GPSDATA.txt',
-        '\n'+JSON.stringify(GPS.data),
-        function (err) {
-            if (err) throw err;
-            console.log('The "data to append" was appended to file!');
-        }
+    
+    if(!data.timestamp){
+        data.timestamp=new Date().getTime();
+    }
+    
+    console.log(
+        util.inspect(
+            data, 
+            { 
+                depth: 5,
+                colors:true
+            }
+        )
     );
+//    fs.appendFile(
+//        'GPSDATA.txt',
+//        '\n'+JSON.stringify(data),
+//        function (err) {
+//            if (err) throw err;
+//            console.log('The "data to append" was appended to file!');
+//        }
+//    );
 }
 
 
