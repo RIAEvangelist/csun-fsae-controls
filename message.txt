@@ -1,907 +1,607 @@
 
-{"7":"841","type":"Sensor","key":"7","value":"841","boardType":"IK888","timeStamp":1438825108093}
-{"7":"3401","type":"RawSensor","key":"7","value":"3401","boardType":"IK888","timeStamp":1438825108100}
-{"7":"791","type":"Sensor","key":"7","value":"791","boardType":"IK888","timeStamp":1438825108114}
-{"7":"3199","type":"RawSensor","key":"7","value":"3199","boardType":"IK888","timeStamp":1438825108116}
-{"7":"769","type":"Sensor","key":"7","value":"769","boardType":"IK888","timeStamp":1438825108127}
-{"7":"3138","type":"RawSensor","key":"7","value":"3138","boardType":"IK888","timeStamp":1438825108129}
-{"7":"759","type":"Sensor","key":"7","value":"759","boardType":"IK888","timeStamp":1438825108172}
-{"7":"3108","type":"RawSensor","key":"7","value":"3108","boardType":"IK888","timeStamp":1438825108174}
-{"7":"770","type":"Sensor","key":"7","value":"770","boardType":"IK888","timeStamp":1438825109658}
-{"7":"3154","type":"RawSensor","key":"7","value":"3154","boardType":"IK888","timeStamp":1438825109660}
-{"7":"781","type":"Sensor","key":"7","value":"781","boardType":"IK888","timeStamp":1438825109725}
-{"7":"3200","type":"RawSensor","key":"7","value":"3200","boardType":"IK888","timeStamp":1438825109729}
-{"7":"791","type":"Sensor","key":"7","value":"791","boardType":"IK888","timeStamp":1438825109799}
-{"7":"3239","type":"RawSensor","key":"7","value":"3239","boardType":"IK888","timeStamp":1438825109804}
-{"7":"801","type":"Sensor","key":"7","value":"801","boardType":"IK888","timeStamp":1438825109881}
-{"7":"3279","type":"RawSensor","key":"7","value":"3279","boardType":"IK888","timeStamp":1438825109883}
-{"7":"811","type":"Sensor","key":"7","value":"811","boardType":"IK888","timeStamp":1438825109962}
-{"7":"3320","type":"RawSensor","key":"7","value":"3320","boardType":"IK888","timeStamp":1438825109963}
-{"7":"821","type":"Sensor","key":"7","value":"821","boardType":"IK888","timeStamp":1438825113022}
-{"7":"3359","type":"RawSensor","key":"7","value":"3359","boardType":"IK888","timeStamp":1438825113024}
-{"7":"831","type":"Sensor","key":"7","value":"831","boardType":"IK888","timeStamp":1438825113113}
-{"7":"3403","type":"RawSensor","key":"7","value":"3403","boardType":"IK888","timeStamp":1438825113115}
-{"7":"842","type":"Sensor","key":"7","value":"842","boardType":"IK888","timeStamp":1438825113213}
-{"7":"3448","type":"RawSensor","key":"7","value":"3448","boardType":"IK888","timeStamp":1438825113215}
-{"7":"854","type":"Sensor","key":"7","value":"854","boardType":"IK888","timeStamp":1438825113293}
-{"7":"3497","type":"RawSensor","key":"7","value":"3497","boardType":"IK888","timeStamp":1438825113293}
-{"7":"864","type":"Sensor","key":"7","value":"864","boardType":"IK888","timeStamp":1438825113350}
-{"7":"3540","type":"RawSensor","key":"7","value":"3540","boardType":"IK888","timeStamp":1438825113350}
-{"7":"874","type":"Sensor","key":"7","value":"874","boardType":"IK888","timeStamp":1438825113431}
-{"7":"3578","type":"RawSensor","key":"7","value":"3578","boardType":"IK888","timeStamp":1438825113433}
-{"7":"864","type":"Sensor","key":"7","value":"864","boardType":"IK888","timeStamp":1438825114552}
-{"7":"3533","type":"RawSensor","key":"7","value":"3533","boardType":"IK888","timeStamp":1438825114553}
-{"7":"854","type":"Sensor","key":"7","value":"854","boardType":"IK888","timeStamp":1438825114710}
-{"7":"3496","type":"RawSensor","key":"7","value":"3496","boardType":"IK888","timeStamp":1438825114710}
-{"7":"841","type":"Sensor","key":"7","value":"841","boardType":"IK888","timeStamp":1438825114792}
-{"7":"3439","type":"RawSensor","key":"7","value":"3439","boardType":"IK888","timeStamp":1438825114793}
-{"7":"830","type":"Sensor","key":"7","value":"830","boardType":"IK888","timeStamp":1438825114826}
-{"7":"3391","type":"RawSensor","key":"7","value":"3391","boardType":"IK888","timeStamp":1438825114826}
-{"7":"819","type":"Sensor","key":"7","value":"819","boardType":"IK888","timeStamp":1438825114861}
-{"7":"3349","type":"RawSensor","key":"7","value":"3349","boardType":"IK888","timeStamp":1438825114862}
-{"7":"809","type":"Sensor","key":"7","value":"809","boardType":"IK888","timeStamp":1438825114906}
-{"7":"3308","type":"RawSensor","key":"7","value":"3308","boardType":"IK888","timeStamp":1438825114906}
-{"7":"796","type":"Sensor","key":"7","value":"796","boardType":"IK888","timeStamp":1438825114954}
-{"7":"3253","type":"RawSensor","key":"7","value":"3253","boardType":"IK888","timeStamp":1438825114954}
-{"7":"783","type":"Sensor","key":"7","value":"783","boardType":"IK888","timeStamp":1438825115004}
-{"7":"3203","type":"RawSensor","key":"7","value":"3203","boardType":"IK888","timeStamp":1438825115005}
-{"7":"772","type":"Sensor","key":"7","value":"772","boardType":"IK888","timeStamp":1438825115046}
-{"7":"3152","type":"RawSensor","key":"7","value":"3152","boardType":"IK888","timeStamp":1438825115046}
-{"7":"760","type":"Sensor","key":"7","value":"760","boardType":"IK888","timeStamp":1438825115078}
-{"7":"3104","type":"RawSensor","key":"7","value":"3104","boardType":"IK888","timeStamp":1438825115079}
-{"7":"748","type":"Sensor","key":"7","value":"748","boardType":"IK888","timeStamp":1438825115111}
-{"7":"3053","type":"RawSensor","key":"7","value":"3053","boardType":"IK888","timeStamp":1438825115111}
-{"7":"730","type":"Sensor","key":"7","value":"730","boardType":"IK888","timeStamp":1438825115144}
-{"7":"2981","type":"RawSensor","key":"7","value":"2981","boardType":"IK888","timeStamp":1438825115144}
-{"7":"713","type":"Sensor","key":"7","value":"713","boardType":"IK888","timeStamp":1438825115177}
-{"7":"2907","type":"RawSensor","key":"7","value":"2907","boardType":"IK888","timeStamp":1438825115177}
-{"7":"699","type":"Sensor","key":"7","value":"699","boardType":"IK888","timeStamp":1438825115209}
-{"7":"2856","type":"RawSensor","key":"7","value":"2856","boardType":"IK888","timeStamp":1438825115209}
-{"7":"683","type":"Sensor","key":"7","value":"683","boardType":"IK888","timeStamp":1438825115242}
-{"7":"2791","type":"RawSensor","key":"7","value":"2791","boardType":"IK888","timeStamp":1438825115243}
-{"7":"672","type":"Sensor","key":"7","value":"672","boardType":"IK888","timeStamp":1438825115293}
-{"7":"2749","type":"RawSensor","key":"7","value":"2749","boardType":"IK888","timeStamp":1438825115293}
-{"7":"662","type":"Sensor","key":"7","value":"662","boardType":"IK888","timeStamp":1438825115350}
-{"7":"2707","type":"RawSensor","key":"7","value":"2707","boardType":"IK888","timeStamp":1438825115350}
-{"7":"672","type":"Sensor","key":"7","value":"672","boardType":"IK888","timeStamp":1438825118239}
-{"7":"2752","type":"RawSensor","key":"7","value":"2752","boardType":"IK888","timeStamp":1438825118240}
-{"7":"682","type":"Sensor","key":"7","value":"682","boardType":"IK888","timeStamp":1438825118329}
-{"7":"2790","type":"RawSensor","key":"7","value":"2790","boardType":"IK888","timeStamp":1438825118330}
-{"7":"693","type":"Sensor","key":"7","value":"693","boardType":"IK888","timeStamp":1438825118377}
-{"7":"2838","type":"RawSensor","key":"7","value":"2838","boardType":"IK888","timeStamp":1438825118378}
-{"7":"703","type":"Sensor","key":"7","value":"703","boardType":"IK888","timeStamp":1438825118441}
-{"7":"2877","type":"RawSensor","key":"7","value":"2877","boardType":"IK888","timeStamp":1438825118443}
-{"7":"716","type":"Sensor","key":"7","value":"716","boardType":"IK888","timeStamp":1438825118506}
-{"7":"2935","type":"RawSensor","key":"7","value":"2935","boardType":"IK888","timeStamp":1438825118506}
-{"7":"726","type":"Sensor","key":"7","value":"726","boardType":"IK888","timeStamp":1438825118571}
-{"7":"2977","type":"RawSensor","key":"7","value":"2977","boardType":"IK888","timeStamp":1438825118571}
-{"7":"736","type":"Sensor","key":"7","value":"736","boardType":"IK888","timeStamp":1438825118603}
-{"7":"3020","type":"RawSensor","key":"7","value":"3020","boardType":"IK888","timeStamp":1438825118603}
-{"7":"746","type":"Sensor","key":"7","value":"746","boardType":"IK888","timeStamp":1438825118642}
-{"7":"3061","type":"RawSensor","key":"7","value":"3061","boardType":"IK888","timeStamp":1438825118643}
-{"7":"756","type":"Sensor","key":"7","value":"756","boardType":"IK888","timeStamp":1438825118668}
-{"7":"3099","type":"RawSensor","key":"7","value":"3099","boardType":"IK888","timeStamp":1438825118668}
-{"7":"768","type":"Sensor","key":"7","value":"768","boardType":"IK888","timeStamp":1438825118700}
-{"7":"3149","type":"RawSensor","key":"7","value":"3149","boardType":"IK888","timeStamp":1438825118701}
-{"7":"786","type":"Sensor","key":"7","value":"786","boardType":"IK888","timeStamp":1438825118732}
-{"7":"3227","type":"RawSensor","key":"7","value":"3227","boardType":"IK888","timeStamp":1438825118733}
-{"7":"800","type":"Sensor","key":"7","value":"800","boardType":"IK888","timeStamp":1438825118757}
-{"7":"3280","type":"RawSensor","key":"7","value":"3280","boardType":"IK888","timeStamp":1438825118757}
-{"7":"814","type":"Sensor","key":"7","value":"814","boardType":"IK888","timeStamp":1438825118790}
-{"7":"3340","type":"RawSensor","key":"7","value":"3340","boardType":"IK888","timeStamp":1438825118790}
-{"7":"826","type":"Sensor","key":"7","value":"826","boardType":"IK888","timeStamp":1438825118821}
-{"7":"3386","type":"RawSensor","key":"7","value":"3386","boardType":"IK888","timeStamp":1438825118822}
-{"7":"838","type":"Sensor","key":"7","value":"838","boardType":"IK888","timeStamp":1438825118870}
-{"7":"3433","type":"RawSensor","key":"7","value":"3433","boardType":"IK888","timeStamp":1438825118870}
-{"7":"825","type":"Sensor","key":"7","value":"825","boardType":"IK888","timeStamp":1438825119605}
-{"7":"3376","type":"RawSensor","key":"7","value":"3376","boardType":"IK888","timeStamp":1438825119605}
-{"7":"814","type":"Sensor","key":"7","value":"814","boardType":"IK888","timeStamp":1438825119670}
-{"7":"3330","type":"RawSensor","key":"7","value":"3330","boardType":"IK888","timeStamp":1438825119671}
-{"7":"804","type":"Sensor","key":"7","value":"804","boardType":"IK888","timeStamp":1438825119768}
-{"7":"3289","type":"RawSensor","key":"7","value":"3289","boardType":"IK888","timeStamp":1438825119769}
-{"7":"794","type":"Sensor","key":"7","value":"794","boardType":"IK888","timeStamp":1438825119848}
-{"7":"3249","type":"RawSensor","key":"7","value":"3249","boardType":"IK888","timeStamp":1438825119849}
-{"7":"783","type":"Sensor","key":"7","value":"783","boardType":"IK888","timeStamp":1438825119913}
-{"7":"3206","type":"RawSensor","key":"7","value":"3206","boardType":"IK888","timeStamp":1438825119913}
-{"7":"769","type":"Sensor","key":"7","value":"769","boardType":"IK888","timeStamp":1438825119977}
-{"7":"3147","type":"RawSensor","key":"7","value":"3147","boardType":"IK888","timeStamp":1438825119978}
-{"7":"753","type":"Sensor","key":"7","value":"753","boardType":"IK888","timeStamp":1438825120025}
-{"7":"3077","type":"RawSensor","key":"7","value":"3077","boardType":"IK888","timeStamp":1438825120027}
-{"7":"740","type":"Sensor","key":"7","value":"740","boardType":"IK888","timeStamp":1438825120058}
-{"7":"3023","type":"RawSensor","key":"7","value":"3023","boardType":"IK888","timeStamp":1438825120059}
-{"7":"723","type":"Sensor","key":"7","value":"723","boardType":"IK888","timeStamp":1438825120090}
-{"7":"2951","type":"RawSensor","key":"7","value":"2951","boardType":"IK888","timeStamp":1438825120090}
-{"7":"703","type":"Sensor","key":"7","value":"703","boardType":"IK888","timeStamp":1438825120122}
-{"7":"2875","type":"RawSensor","key":"7","value":"2875","boardType":"IK888","timeStamp":1438825120123}
-{"7":"682","type":"Sensor","key":"7","value":"682","boardType":"IK888","timeStamp":1438825120155}
-{"7":"2777","type":"RawSensor","key":"7","value":"2777","boardType":"IK888","timeStamp":1438825120155}
-{"7":"671","type":"Sensor","key":"7","value":"671","boardType":"IK888","timeStamp":1438825120171}
-{"7":"2736","type":"RawSensor","key":"7","value":"2736","boardType":"IK888","timeStamp":1438825120172}
-{"7":"661","type":"Sensor","key":"7","value":"661","boardType":"IK888","timeStamp":1438825120187}
-{"7":"2696","type":"RawSensor","key":"7","value":"2696","boardType":"IK888","timeStamp":1438825120188}
-{"7":"648","type":"Sensor","key":"7","value":"648","boardType":"IK888","timeStamp":1438825120204}
-{"7":"2636","type":"RawSensor","key":"7","value":"2636","boardType":"IK888","timeStamp":1438825120206}
-{"7":"638","type":"Sensor","key":"7","value":"638","boardType":"IK888","timeStamp":1438825120221}
-{"7":"2604","type":"RawSensor","key":"7","value":"2604","boardType":"IK888","timeStamp":1438825120222}
-{"7":"618","type":"Sensor","key":"7","value":"618","boardType":"IK888","timeStamp":1438825120252}
-{"7":"2518","type":"RawSensor","key":"7","value":"2518","boardType":"IK888","timeStamp":1438825120253}
-{"7":"607","type":"Sensor","key":"7","value":"607","boardType":"IK888","timeStamp":1438825120269}
-{"7":"2474","type":"RawSensor","key":"7","value":"2474","boardType":"IK888","timeStamp":1438825120270}
-{"7":"597","type":"Sensor","key":"7","value":"597","boardType":"IK888","timeStamp":1438825120285}
-{"7":"2438","type":"RawSensor","key":"7","value":"2438","boardType":"IK888","timeStamp":1438825120287}
-{"7":"584","type":"Sensor","key":"7","value":"584","boardType":"IK888","timeStamp":1438825120310}
-{"7":"2386","type":"RawSensor","key":"7","value":"2386","boardType":"IK888","timeStamp":1438825120311}
-{"7":"594","type":"Sensor","key":"7","value":"594","boardType":"IK888","timeStamp":1438825124954}
-{"7":"2436","type":"RawSensor","key":"7","value":"2436","boardType":"IK888","timeStamp":1438825124954}
-{"7":"608","type":"Sensor","key":"7","value":"608","boardType":"IK888","timeStamp":1438825125002}
-{"7":"2495","type":"RawSensor","key":"7","value":"2495","boardType":"IK888","timeStamp":1438825125003}
-{"7":"619","type":"Sensor","key":"7","value":"619","boardType":"IK888","timeStamp":1438825125035}
-{"7":"2537","type":"RawSensor","key":"7","value":"2537","boardType":"IK888","timeStamp":1438825125035}
-{"7":"633","type":"Sensor","key":"7","value":"633","boardType":"IK888","timeStamp":1438825125083}
-{"7":"2595","type":"RawSensor","key":"7","value":"2595","boardType":"IK888","timeStamp":1438825125084}
-{"7":"644","type":"Sensor","key":"7","value":"644","boardType":"IK888","timeStamp":1438825125116}
-{"7":"2641","type":"RawSensor","key":"7","value":"2641","boardType":"IK888","timeStamp":1438825125117}
-{"7":"656","type":"Sensor","key":"7","value":"656","boardType":"IK888","timeStamp":1438825125142}
-{"7":"2693","type":"RawSensor","key":"7","value":"2693","boardType":"IK888","timeStamp":1438825125142}
-{"7":"670","type":"Sensor","key":"7","value":"670","boardType":"IK888","timeStamp":1438825125191}
-{"7":"2750","type":"RawSensor","key":"7","value":"2750","boardType":"IK888","timeStamp":1438825125191}
-{"7":"681","type":"Sensor","key":"7","value":"681","boardType":"IK888","timeStamp":1438825125227}
-{"7":"2792","type":"RawSensor","key":"7","value":"2792","boardType":"IK888","timeStamp":1438825125227}
-{"7":"694","type":"Sensor","key":"7","value":"694","boardType":"IK888","timeStamp":1438825125260}
-{"7":"2840","type":"RawSensor","key":"7","value":"2840","boardType":"IK888","timeStamp":1438825125260}
-{"7":"704","type":"Sensor","key":"7","value":"704","boardType":"IK888","timeStamp":1438825126678}
-{"7":"2877","type":"RawSensor","key":"7","value":"2877","boardType":"IK888","timeStamp":1438825126679}
-{"7":"694","type":"Sensor","key":"7","value":"694","boardType":"IK888","timeStamp":1438825127480}
-{"7":"2836","type":"RawSensor","key":"7","value":"2836","boardType":"IK888","timeStamp":1438825127481}
-{"7":"679","type":"Sensor","key":"7","value":"679","boardType":"IK888","timeStamp":1438825127513}
-{"7":"2782","type":"RawSensor","key":"7","value":"2782","boardType":"IK888","timeStamp":1438825127513}
-{"7":"668","type":"Sensor","key":"7","value":"668","boardType":"IK888","timeStamp":1438825127561}
-{"7":"2732","type":"RawSensor","key":"7","value":"2732","boardType":"IK888","timeStamp":1438825127562}
-{"7":"658","type":"Sensor","key":"7","value":"658","boardType":"IK888","timeStamp":1438825127610}
-{"7":"2685","type":"RawSensor","key":"7","value":"2685","boardType":"IK888","timeStamp":1438825127610}
-{"7":"647","type":"Sensor","key":"7","value":"647","boardType":"IK888","timeStamp":1438825127642}
-{"7":"2645","type":"RawSensor","key":"7","value":"2645","boardType":"IK888","timeStamp":1438825127643}
-{"7":"636","type":"Sensor","key":"7","value":"636","boardType":"IK888","timeStamp":1438825127707}
-{"7":"2602","type":"RawSensor","key":"7","value":"2602","boardType":"IK888","timeStamp":1438825127707}
-{"7":"623","type":"Sensor","key":"7","value":"623","boardType":"IK888","timeStamp":1438825127755}
-{"7":"2544","type":"RawSensor","key":"7","value":"2544","boardType":"IK888","timeStamp":1438825127756}
-{"7":"610","type":"Sensor","key":"7","value":"610","boardType":"IK888","timeStamp":1438825127788}
-{"7":"2488","type":"RawSensor","key":"7","value":"2488","boardType":"IK888","timeStamp":1438825127788}
-{"7":"599","type":"Sensor","key":"7","value":"599","boardType":"IK888","timeStamp":1438825127820}
-{"7":"2445","type":"RawSensor","key":"7","value":"2445","boardType":"IK888","timeStamp":1438825127820}
-{"7":"588","type":"Sensor","key":"7","value":"588","boardType":"IK888","timeStamp":1438825127861}
-{"7":"2402","type":"RawSensor","key":"7","value":"2402","boardType":"IK888","timeStamp":1438825127861}
-{"7":"577","type":"Sensor","key":"7","value":"577","boardType":"IK888","timeStamp":1438825127893}
-{"7":"2355","type":"RawSensor","key":"7","value":"2355","boardType":"IK888","timeStamp":1438825127894}
-{"7":"563","type":"Sensor","key":"7","value":"563","boardType":"IK888","timeStamp":1438825127926}
-{"7":"2294","type":"RawSensor","key":"7","value":"2294","boardType":"IK888","timeStamp":1438825127926}
-{"7":"543","type":"Sensor","key":"7","value":"543","boardType":"IK888","timeStamp":1438825127958}
-{"7":"2209","type":"RawSensor","key":"7","value":"2209","boardType":"IK888","timeStamp":1438825127958}
-{"7":"528","type":"Sensor","key":"7","value":"528","boardType":"IK888","timeStamp":1438825127974}
-{"7":"2146","type":"RawSensor","key":"7","value":"2146","boardType":"IK888","timeStamp":1438825127974}
-{"7":"513","type":"Sensor","key":"7","value":"513","boardType":"IK888","timeStamp":1438825127990}
-{"7":"2086","type":"RawSensor","key":"7","value":"2086","boardType":"IK888","timeStamp":1438825127991}
-{"7":"500","type":"Sensor","key":"7","value":"500","boardType":"IK888","timeStamp":1438825128006}
-{"7":"2034","type":"RawSensor","key":"7","value":"2034","boardType":"IK888","timeStamp":1438825128007}
-{"7":"488","type":"Sensor","key":"7","value":"488","boardType":"IK888","timeStamp":1438825128023}
-{"7":"1985","type":"RawSensor","key":"7","value":"1985","boardType":"IK888","timeStamp":1438825128023}
-{"7":"477","type":"Sensor","key":"7","value":"477","boardType":"IK888","timeStamp":1438825128039}
-{"7":"1941","type":"RawSensor","key":"7","value":"1941","boardType":"IK888","timeStamp":1438825128039}
-{"7":"459","type":"Sensor","key":"7","value":"459","boardType":"IK888","timeStamp":1438825128071}
-{"7":"1869","type":"RawSensor","key":"7","value":"1869","boardType":"IK888","timeStamp":1438825128072}
-{"7":"448","type":"Sensor","key":"7","value":"448","boardType":"IK888","timeStamp":1438825128107}
-{"7":"1832","type":"RawSensor","key":"7","value":"1832","boardType":"IK888","timeStamp":1438825128107}
-{"7":"464","type":"Sensor","key":"7","value":"464","boardType":"IK888","timeStamp":1438825128696}
-{"7":"1908","type":"RawSensor","key":"7","value":"1908","boardType":"IK888","timeStamp":1438825128697}
-{"7":"474","type":"Sensor","key":"7","value":"474","boardType":"IK888","timeStamp":1438825128713}
-{"7":"1950","type":"RawSensor","key":"7","value":"1950","boardType":"IK888","timeStamp":1438825128713}
-{"7":"484","type":"Sensor","key":"7","value":"484","boardType":"IK888","timeStamp":1438825128729}
-{"7":"1989","type":"RawSensor","key":"7","value":"1989","boardType":"IK888","timeStamp":1438825128729}
-{"7":"502","type":"Sensor","key":"7","value":"502","boardType":"IK888","timeStamp":1438825128761}
-{"7":"2062","type":"RawSensor","key":"7","value":"2062","boardType":"IK888","timeStamp":1438825128762}
-{"7":"519","type":"Sensor","key":"7","value":"519","boardType":"IK888","timeStamp":1438825128794}
-{"7":"2136","type":"RawSensor","key":"7","value":"2136","boardType":"IK888","timeStamp":1438825128794}
-{"7":"533","type":"Sensor","key":"7","value":"533","boardType":"IK888","timeStamp":1438825128826}
-{"7":"2190","type":"RawSensor","key":"7","value":"2190","boardType":"IK888","timeStamp":1438825128826}
-{"7":"543","type":"Sensor","key":"7","value":"543","boardType":"IK888","timeStamp":1438825128858}
-{"7":"2226","type":"RawSensor","key":"7","value":"2226","boardType":"IK888","timeStamp":1438825128859}
-{"7":"553","type":"Sensor","key":"7","value":"553","boardType":"IK888","timeStamp":1438825128972}
-{"7":"2264","type":"RawSensor","key":"7","value":"2264","boardType":"IK888","timeStamp":1438825128972}
-{"7":"564","type":"Sensor","key":"7","value":"564","boardType":"IK888","timeStamp":1438825129077}
-{"7":"2306","type":"RawSensor","key":"7","value":"2306","boardType":"IK888","timeStamp":1438825129077}
-{"7":"578","type":"Sensor","key":"7","value":"578","boardType":"IK888","timeStamp":1438825129126}
-{"7":"2373","type":"RawSensor","key":"7","value":"2373","boardType":"IK888","timeStamp":1438825129126}
-{"7":"588","type":"Sensor","key":"7","value":"588","boardType":"IK888","timeStamp":1438825129142}
-{"7":"2412","type":"RawSensor","key":"7","value":"2412","boardType":"IK888","timeStamp":1438825129142}
-{"7":"602","type":"Sensor","key":"7","value":"602","boardType":"IK888","timeStamp":1438825129175}
-{"7":"2475","type":"RawSensor","key":"7","value":"2475","boardType":"IK888","timeStamp":1438825129176}
-{"7":"617","type":"Sensor","key":"7","value":"617","boardType":"IK888","timeStamp":1438825129207}
-{"7":"2531","type":"RawSensor","key":"7","value":"2531","boardType":"IK888","timeStamp":1438825129208}
-{"7":"632","type":"Sensor","key":"7","value":"632","boardType":"IK888","timeStamp":1438825129240}
-{"7":"2593","type":"RawSensor","key":"7","value":"2593","boardType":"IK888","timeStamp":1438825129240}
-{"7":"646","type":"Sensor","key":"7","value":"646","boardType":"IK888","timeStamp":1438825129289}
-{"7":"2652","type":"RawSensor","key":"7","value":"2652","boardType":"IK888","timeStamp":1438825129289}
-{"7":"657","type":"Sensor","key":"7","value":"657","boardType":"IK888","timeStamp":1438825129337}
-{"7":"2692","type":"RawSensor","key":"7","value":"2692","boardType":"IK888","timeStamp":1438825129337}
-{"7":"667","type":"Sensor","key":"7","value":"667","boardType":"IK888","timeStamp":1438825129466}
-{"7":"2731","type":"RawSensor","key":"7","value":"2731","boardType":"IK888","timeStamp":1438825129467}
-{"7":"680","type":"Sensor","key":"7","value":"680","boardType":"IK888","timeStamp":1438825129515}
-{"7":"2785","type":"RawSensor","key":"7","value":"2785","boardType":"IK888","timeStamp":1438825129515}
-{"7":"693","type":"Sensor","key":"7","value":"693","boardType":"IK888","timeStamp":1438825129547}
-{"7":"2841","type":"RawSensor","key":"7","value":"2841","boardType":"IK888","timeStamp":1438825129547}
-{"7":"707","type":"Sensor","key":"7","value":"707","boardType":"IK888","timeStamp":1438825129612}
-{"7":"2900","type":"RawSensor","key":"7","value":"2900","boardType":"IK888","timeStamp":1438825129612}
-{"7":"718","type":"Sensor","key":"7","value":"718","boardType":"IK888","timeStamp":1438825129660}
-{"7":"2945","type":"RawSensor","key":"7","value":"2945","boardType":"IK888","timeStamp":1438825129660}
-{"7":"728","type":"Sensor","key":"7","value":"728","boardType":"IK888","timeStamp":1438825129765}
-{"7":"2980","type":"RawSensor","key":"7","value":"2980","boardType":"IK888","timeStamp":1438825129766}
-{"7":"716","type":"Sensor","key":"7","value":"716","boardType":"IK888","timeStamp":1438825130813}
-{"7":"2924","type":"RawSensor","key":"7","value":"2924","boardType":"IK888","timeStamp":1438825130815}
-{"7":"702","type":"Sensor","key":"7","value":"702","boardType":"IK888","timeStamp":1438825130839}
-{"7":"2870","type":"RawSensor","key":"7","value":"2870","boardType":"IK888","timeStamp":1438825130840}
-{"7":"685","type":"Sensor","key":"7","value":"685","boardType":"IK888","timeStamp":1438825130908}
-{"7":"2794","type":"RawSensor","key":"7","value":"2794","boardType":"IK888","timeStamp":1438825130910}
-{"7":"675","type":"Sensor","key":"7","value":"675","boardType":"IK888","timeStamp":1438825130958}
-{"7":"2758","type":"RawSensor","key":"7","value":"2758","boardType":"IK888","timeStamp":1438825130959}
-{"7":"663","type":"Sensor","key":"7","value":"663","boardType":"IK888","timeStamp":1438825131014}
-{"7":"2714","type":"RawSensor","key":"7","value":"2714","boardType":"IK888","timeStamp":1438825131015}
-{"7":"653","type":"Sensor","key":"7","value":"653","boardType":"IK888","timeStamp":1438825131078}
-{"7":"2667","type":"RawSensor","key":"7","value":"2667","boardType":"IK888","timeStamp":1438825131079}
-{"7":"641","type":"Sensor","key":"7","value":"641","boardType":"IK888","timeStamp":1438825131430}
-{"7":"2619","type":"RawSensor","key":"7","value":"2619","boardType":"IK888","timeStamp":1438825131430}
-{"7":"625","type":"Sensor","key":"7","value":"625","boardType":"IK888","timeStamp":1438825131478}
-{"7":"2549","type":"RawSensor","key":"7","value":"2549","boardType":"IK888","timeStamp":1438825131479}
-{"7":"610","type":"Sensor","key":"7","value":"610","boardType":"IK888","timeStamp":1438825131510}
-{"7":"2489","type":"RawSensor","key":"7","value":"2489","boardType":"IK888","timeStamp":1438825131511}
-{"7":"598","type":"Sensor","key":"7","value":"598","boardType":"IK888","timeStamp":1438825131543}
-{"7":"2443","type":"RawSensor","key":"7","value":"2443","boardType":"IK888","timeStamp":1438825131543}
-{"7":"588","type":"Sensor","key":"7","value":"588","boardType":"IK888","timeStamp":1438825131592}
-{"7":"2406","type":"RawSensor","key":"7","value":"2406","boardType":"IK888","timeStamp":1438825131592}
-{"7":"599","type":"Sensor","key":"7","value":"599","boardType":"IK888","timeStamp":1438825132173}
-{"7":"2458","type":"RawSensor","key":"7","value":"2458","boardType":"IK888","timeStamp":1438825132175}
-{"7":"612","type":"Sensor","key":"7","value":"612","boardType":"IK888","timeStamp":1438825132218}
-{"7":"2511","type":"RawSensor","key":"7","value":"2511","boardType":"IK888","timeStamp":1438825132219}
-{"7":"622","type":"Sensor","key":"7","value":"622","boardType":"IK888","timeStamp":1438825132251}
-{"7":"2549","type":"RawSensor","key":"7","value":"2549","boardType":"IK888","timeStamp":1438825132252}
-{"7":"633","type":"Sensor","key":"7","value":"633","boardType":"IK888","timeStamp":1438825132283}
-{"7":"2595","type":"RawSensor","key":"7","value":"2595","boardType":"IK888","timeStamp":1438825132285}
-{"7":"644","type":"Sensor","key":"7","value":"644","boardType":"IK888","timeStamp":1438825132316}
-{"7":"2641","type":"RawSensor","key":"7","value":"2641","boardType":"IK888","timeStamp":1438825132317}
-{"7":"656","type":"Sensor","key":"7","value":"656","boardType":"IK888","timeStamp":1438825132349}
-{"7":"2691","type":"RawSensor","key":"7","value":"2691","boardType":"IK888","timeStamp":1438825132350}
-{"7":"668","type":"Sensor","key":"7","value":"668","boardType":"IK888","timeStamp":1438825132397}
-{"7":"2738","type":"RawSensor","key":"7","value":"2738","boardType":"IK888","timeStamp":1438825132399}
-{"7":"680","type":"Sensor","key":"7","value":"680","boardType":"IK888","timeStamp":1438825132446}
-{"7":"2784","type":"RawSensor","key":"7","value":"2784","boardType":"IK888","timeStamp":1438825132447}
-{"7":"692","type":"Sensor","key":"7","value":"692","boardType":"IK888","timeStamp":1438825132487}
-{"7":"2838","type":"RawSensor","key":"7","value":"2838","boardType":"IK888","timeStamp":1438825132489}
-{"7":"703","type":"Sensor","key":"7","value":"703","boardType":"IK888","timeStamp":1438825132550}
-{"7":"2877","type":"RawSensor","key":"7","value":"2877","boardType":"IK888","timeStamp":1438825132551}
-{"7":"713","type":"Sensor","key":"7","value":"713","boardType":"IK888","timeStamp":1438825132630}
-{"7":"2918","type":"RawSensor","key":"7","value":"2918","boardType":"IK888","timeStamp":1438825132631}
-{"7":"702","type":"Sensor","key":"7","value":"702","boardType":"IK888","timeStamp":1438825132872}
-{"7":"2869","type":"RawSensor","key":"7","value":"2869","boardType":"IK888","timeStamp":1438825132873}
-{"7":"689","type":"Sensor","key":"7","value":"689","boardType":"IK888","timeStamp":1438825132905}
-{"7":"2809","type":"RawSensor","key":"7","value":"2809","boardType":"IK888","timeStamp":1438825132906}
-{"7":"677","type":"Sensor","key":"7","value":"677","boardType":"IK888","timeStamp":1438825132938}
-{"7":"2763","type":"RawSensor","key":"7","value":"2763","boardType":"IK888","timeStamp":1438825132938}
-{"7":"665","type":"Sensor","key":"7","value":"665","boardType":"IK888","timeStamp":1438825132970}
-{"7":"2716","type":"RawSensor","key":"7","value":"2716","boardType":"IK888","timeStamp":1438825132971}
-{"7":"651","type":"Sensor","key":"7","value":"651","boardType":"IK888","timeStamp":1438825133002}
-{"7":"2657","type":"RawSensor","key":"7","value":"2657","boardType":"IK888","timeStamp":1438825133002}
-{"7":"641","type":"Sensor","key":"7","value":"641","boardType":"IK888","timeStamp":1438825133131}
-{"7":"2626","type":"RawSensor","key":"7","value":"2626","boardType":"IK888","timeStamp":1438825133131}
-{"7":"660","type":"Sensor","key":"7","value":"660","boardType":"IK888","timeStamp":1438825133317}
-{"7":"2714","type":"RawSensor","key":"7","value":"2714","boardType":"IK888","timeStamp":1438825133317}
-{"7":"673","type":"Sensor","key":"7","value":"673","boardType":"IK888","timeStamp":1438825133333}
-{"7":"2774","type":"RawSensor","key":"7","value":"2774","boardType":"IK888","timeStamp":1438825133333}
-{"7":"690","type":"Sensor","key":"7","value":"690","boardType":"IK888","timeStamp":1438825133349}
-{"7":"2846","type":"RawSensor","key":"7","value":"2846","boardType":"IK888","timeStamp":1438825133350}
-{"7":"704","type":"Sensor","key":"7","value":"704","boardType":"IK888","timeStamp":1438825133365}
-{"7":"2894","type":"RawSensor","key":"7","value":"2894","boardType":"IK888","timeStamp":1438825133366}
-{"7":"721","type":"Sensor","key":"7","value":"721","boardType":"IK888","timeStamp":1438825133383}
-{"7":"2968","type":"RawSensor","key":"7","value":"2968","boardType":"IK888","timeStamp":1438825133384}
-{"7":"735","type":"Sensor","key":"7","value":"735","boardType":"IK888","timeStamp":1438825133398}
-{"7":"3020","type":"RawSensor","key":"7","value":"3020","boardType":"IK888","timeStamp":1438825133398}
-{"7":"751","type":"Sensor","key":"7","value":"751","boardType":"IK888","timeStamp":1438825133430}
-{"7":"3080","type":"RawSensor","key":"7","value":"3080","boardType":"IK888","timeStamp":1438825133431}
-{"7":"762","type":"Sensor","key":"7","value":"762","boardType":"IK888","timeStamp":1438825133480}
-{"7":"3122","type":"RawSensor","key":"7","value":"3122","boardType":"IK888","timeStamp":1438825133481}
-"775"
-"3178"
-"785"
-"3220"
-"796"
-"3267"
-"806"
-"3308"
-"818"
-"3349"
-"831"
-"3401"
-"841"
-"3443"
-"829"
-"3392"
-"817"
-"3341"
-"804"
-"3286"
-"793"
-"3239"
-"783"
-"3201"
-"772"
-"3157"
-"762"
-"3112"
-"749"
-"3065"
-"739"
-"3022"
-"726"
-"2967"
-"711"
-"2905"
-"699"
-"2857"
-"720"
-"2970"
-"746"
-"3083"
-"776"
-"3216"
-"816"
-"3382"
-"846"
-"3483"
-"860"
-"3529"
-"872"
-"3570"
-"3628"
-"885"
-"897"
-"3676"
-"908"
-"3718"
-"919"
-"3762"
-"907"
-"3706"
-"896"
-"3660"
-"880"
-"3592"
-"862"
-"3517"
-"852"
-"3477"
-"838"
-"3410"
-"822"
-"3348"
-"807"
-"3287"
-"793"
-"3233"
-"780"
-"3180"
-"767"
-"3130"
-"754"
-"3074"
-"738"
-"3006"
-"719"
-"2924"
-"701"
-"2859"
-"686"
-"2788"
-"2732"
-"671"
-"657"
-"2673"
-"642"
-"2616"
-"629"
-"2560"
-"613"
-"2490"
-"594"
-"2412"
-"575"
-"2336"
-"558"
-"2270"
-"542"
-"2201"
-"522"
-"2115"
-"503"
-"2039"
-"487"
-"1977"
-"473"
-"1923"
-"461"
-"1872"
-"445"
-"1804"
-"431"
-"1754"
-"415"
-"1682"
-"394"
-"1599"
-"378"
-"1531"
-"363"
-"1472"
-"346"
-"1398"
-"325"
-"1308"
-"305"
-"1228"
-"289"
-"1169"
-"278"
-"1130"
-"268"
-"1088"
-"294"
-"1249"
-"353"
-"1517"
-"437"
-"1889"
-"540"
-"2324"
-"654"
-"2792"
-"764"
-"3229"
-"846"
-"3529"
-"885"
-"3640"
-"859"
-"3475"
-"807"
-"3248"
-"748"
-"3003"
-"690"
-"2770"
-"637"
-"2552"
-"583"
-"2331"
-"533"
-"2128"
-"486"
-"1946"
-"448"
-"1799"
-"421"
-"1699"
-"400"
-"1616"
-"380"
-"1534"
-"356"
-"1428"
-"322"
-"1274"
-"279"
-"1098"
-"237"
-"932"
-"205"
-"813"
-"183"
-"727"
-"170"
-"686"
-"202"
-"881"
-"270"
-"1185"
-"352"
-"1524"
-"440"
-"1907"
-"532"
-"2270"
-"621"
-"2630"
-"697"
-"2918"
-"753"
-"3121"
-"774"
-"3176"
-"738"
-"2975"
-"682"
-"2727"
-"609"
-"2406"
-"521"
-"2039"
-"434"
-"1692"
-"360"
-"1408"
-"300"
-"1177"
-"259"
-"1025"
-"233"
-"934"
-"217"
-"878"
-"207"
-"835"
-"195"
-"784"
-"177"
-"704"
-"154"
-"601"
-"124"
-"472"
-"80"
-"271"
-"19"
-"12"
-"0"
-"0"
-"15"
-"88"
-"52"
-"257"
-"103"
-"485"
-"170"
-"774"
-"256"
-"1145"
-"346"
-"1504"
-"432"
-"1867"
-"520"
-"2215"
-"601"
-"2548"
-"678"
-"2846"
-"751"
-"3149"
-"823"
-"3441"
-"892"
-"3721"
-"956"
-"3973"
-"993"
-"4063"
-"983"
-"3992"
-"944"
-"3811"
-"888"
-"3570"
-"820"
-"3283"
-"746"
-"2979"
-"671"
-"2669"
-"594"
-"2349"
-"517"
-"2040"
-"447"
-"1764"
-"388"
-"1532"
-"335"
-"1317"
-"285"
-"1118"
-"241"
-"945"
-"205"
-"802"
-"172"
-"671"
-"144"
-"563"
-"121"
-"475"
-"104"
-"413"
-"125"
-"529"
-"151"
-"655"
-"196"
-"856"
-"258"
-"1129"
-"332"
-"1434"
-"409"
-"1759"
-"496"
-"2116"
-"573"
-"2421"
-"635"
-"2651"
-"672"
-"2778"
-"682"
-"2799"
-"660"
-"2675"
-"622"
-"2501"
-"573"
-"2295"
-"526"
-"2105"
-"484"
-"1941"
-"449"
-"1810"
-"428"
-"1733"
-"417"
-"1697"
-"431"
-"1790"
-"466"
-"1948"
-"514"
-"2160"
-"572"
-"2405"
-"636"
-"2664"
-"693"
-"2887"
-"739"
-"3061"
-"760"
-"3119"
-"730"
-"2954"
-"689"
-"2771"
-"640"
-"2570"
-"592"
-"2378"
-"555"
-"2238"
-"529"
-"2147"
-"514"
-"2095"
-"539"
-"2248"
-"587"
-"2459"
-"643"
-"2684"
-"690"
-"2868"
-"734"
-"3050"
-"770"
-"3179"
-"785"
-"3217"
-"771"
-"3128"
-"729"
-"2922"
-"661"
-"2630"
-"588"
-"2339"
-"537"
-"2160"
-"515"
-"2099"
-"536"
-"2228"
-"581"
-"2435"
-"637"
-"2661"
-"683"
-"2833"
-"716"
-"2964"
-"741"
-"3055"
-"756"
-"3106"
-"741"
-"3004"
-"706"
-"2852"
-"669"
-"2704"
-"641"
-"2606"
-"631"
-"2581"
-"663"
-"2756"
-"716"
-"3003"
-"793"
-"3328"
-"872"
-"3646"
-"938"
-"3895"
-"979"
-"4036"
-"992"
-"4063"
-"981"
-"3990"
-"941"
-"3796"
-"876"
-"3513"
-"805"
-"3227"
-"743"
-"2985"
-"690"
-"2771"
-"644"
-"2596"
-"611"
-"2471"
-"590"
-"2402"
-"580"
-"2375"
-"593"
-"2449"
-"629"
-"2624"
-"688"
-"2889"
-"773"
-"3264"
-"872"
-"3671"
-"964"
-"4033"
-"993"
-"4067"
-"964"
-"3892"
-"900"
-"3608"
-"821"
-"3278"
-"736"
-"2922"
-"647"
-"2557"
-"553"
-"2164"
-"463"
-"1806"
-"388"
-"1522"
-"335"
-"1327"
-"301"
-"1209"
-"283"
-"1148"
-"295"
-"1227"
-"325"
-"1368"
-"369"
-"1562"
-"426"
-"1810"
-"494"
-"2093"
-"566"
-"2397"
-"645"
-"2719"
-"721"
-"3036"
-"802"
-"3367"
-"881"
-"3684"
-"952"
-"3963"
-"993"
-"4065"
-"980"
-"3973"
-"933"
-"3762"
-"869"
-"3488"
-"797"
-"3184"
-"722"
-"2876"
-"645"
-"2561"
-"563"
-"2218"
-"481"
-"1884"
-"405"
-"1589"
-"339"
-"1324"
-"280"
-"1089"
-"232"
-"910"
-"198"
-"782"
-"172"
-"678"
-"150"
-"595"
-"134"
-"531"
-"121"
-"484"
-"132"
-"549"
-"148"
-"627"
-"174"
-"745"
-"216"
-"932"
-"272"
-"1179"
-"340"
-"1461"
-"414"
-"1772"
-"498"
-"2127"
-"582"
-"2471"
-"663"
-"2788"
-"734"
-"3080"
-"801"
-"3341"
-"858"
-"3567"
-"905"
-"3748"
-"942"
-"3893"
-"974"
-"4016"
-"995"
-"4075"
+"696"   1438825523540
+"2841"   1438825523545
+"681"   1438825523557
+"2769"   1438825523558
+"659"   1438825523573
+"2670"   1438825523574
+"627"   1438825523590
+"2527"   1438825523591
+"582"   1438825523599
+"2331"   1438825523602
+"530"   1438825523615
+"2114"   1438825523622
+"475"   1438825523630
+"1885"   1438825523631
+"421"   1438825523648
+"1673"   1438825523648
+"380"   1438825523665
+"1519"   1438825523665
+"355"   1438825523681
+"1433"   1438825523682
+"340"   1438825523698
+"1378"   1438825523699
+"327"   1438825523715
+"1327"   1438825523716
+"317"   1438825523732
+"1287"   1438825523732
+"300"   1438825523765
+"1218"   1438825523765
+"290"   1438825523773
+"1176"   1438825523774
+"279"   1438825523790
+"1133"   1438825523790
+"265"   1438825523822
+"1077"   1438825523823
+"255"   1438825523872
+"1043"   1438825523873
+"271"   1438825524115
+"1119"   1438825524115
+"286"   1438825524132
+"1191"   1438825524132
+"310"   1438825524149
+"1298"   1438825524149
+"342"   1438825524164
+"1435"   1438825524164
+"381"   1438825524181
+"1605"   1438825524181
+"427"   1438825524189
+"1802"   1438825524189
+"483"   1438825524207
+"2032"   1438825524207
+"538"   1438825524223
+"2258"   1438825524224
+"594"   1438825524239
+"2490"   1438825524240
+"649"   1438825524256
+"2712"   1438825524256
+"699"   1438825524272
+"2910"   1438825524272
+"749"   1438825524289
+"3115"   1438825524289
+"791"   1438825524304
+"3276"   1438825524304
+"825"   1438825524320
+"3408"   1438825524321
+"848"   1438825524337
+"3487"   1438825524337
+"859"   1438825524353
+"3522"   1438825524353
+"845"   1438825524797
+"3452"   1438825524798
+"835"   1438825524814
+"3406"   1438825524815
+"823"   1438825524831
+"3355"   1438825524834
+"807"   1438825524848
+"3285"   1438825524848
+"787"   1438825524865
+"3200"   1438825524865
+"764"   1438825524881
+"3104"   1438825524881
+"737"   1438825524897
+"2984"   1438825524898
+"705"   1438825524914
+"2854"   1438825524914
+"673"   1438825524930
+"2725"   1438825524930
+"640"   1438825524946
+"2586"   1438825524946
+"604"   1438825524962
+"2435"   1438825524962
+"565"   1438825524979
+"2276"   1438825524979
+"528"   1438825524996
+"2122"   1438825524996
+"492"   1438825525011
+"1980"   1438825525012
+"460"   1438825525027
+"1850"   1438825525028
+"429"   1438825525044
+"1725"   1438825525045
+"404"   1438825525061
+"1631"   1438825525061
+"385"   1438825525069
+"1557"   1438825525069
+"368"   1438825525085
+"1493"   1438825525086
+"357"   1438825525101
+"1449"   1438825525103
+"346"   1438825525119
+"1406"   1438825525119
+"334"   1438825525136
+"1355"   1438825525137
+"320"   1438825525152
+"1293"   1438825525152
+"305"   1438825525168
+"1234"   1438825525169
+"292"   1438825525187
+"1182"   1438825525187
+"281"   1438825525203
+"1139"   1438825525203
+"269"   1438825525236
+"1097"   1438825525236
+"258"   1438825525293
+"1051"   1438825525294
+"245"   1438825525343
+"1000"   1438825525343
+"235"   1438825525392
+"960"   1438825525395
+"249"   1438825525646
+"1035"   1438825525647
+"270"   1438825525664
+"1130"   1438825525665
+"297"   1438825525679
+"1249"   1438825525680
+"330"   1438825525695
+"1389"   1438825525696
+"366"   1438825525712
+"1535"   1438825525712
+"400"   1438825525728
+"1671"   1438825525728
+"433"   1438825525745
+"1815"   1438825525745
+"467"   1438825525761
+"1941"   1438825525761
+"495"   1438825525777
+"2054"   1438825525777
+"521"   1438825525793
+"2162"   1438825525793
+"547"   1438825525810
+"2263"   1438825525810
+"569"   1438825525826
+"2350"   1438825525826
+"590"   1438825525843
+"2436"   1438825525843
+"607"   1438825525859
+"2500"   1438825525859
+"620"   1438825525875
+"2551"   1438825525875
+"632"   1438825525907
+"2590"   1438825525908
+"618"   1438825526081
+"2514"   1438825526081
+"596"   1438825526097
+"2410"   1438825526097
+"567"   1438825526113
+"2288"   1438825526114
+"534"   1438825526130
+"2150"   1438825526130
+"497"   1438825526147
+"1994"   1438825526147
+"459"   1438825526163
+"1844"   1438825526163
+"428"   1438825526179
+"1725"   1438825526179
+"412"   1438825526195
+"1679"   1438825526195
+"436"   1438825526319
+"1813"   1438825526320
+"468"   1438825526335
+"1951"   1438825526335
+"508"   1438825526352
+"2126"   1438825526352
+"556"   1438825526368
+"2324"   1438825526369
+"608"   1438825526385
+"2543"   1438825526385
+"658"   1438825526402
+"2739"   1438825526402
+"698"   1438825526418
+"2891"   1438825526419
+"732"   1438825526435
+"3028"   1438825526435
+"756"   1438825526452
+"3112"   1438825526452
+"768"   1438825526467
+"3149"   1438825526468
+"778"   1438825526532
+"3184"   1438825526532
+"790"   1438825526605
+"3240"   1438825526605
+"804"   1438825526638
+"3300"   1438825526638
+"817"   1438825526670
+"3348"   1438825526670
+"804"   1438825526849
+"3275"   1438825526849
+"788"   1438825526864
+"3208"   1438825526865
+"768"   1438825526881
+"3123"   1438825526881
+"743"   1438825526897
+"3011"   1438825526897
+"710"   1438825526913
+"2871"   1438825526913
+"674"   1438825526929
+"2720"   1438825526929
+"635"   1438825526946
+"2559"   1438825526946
+"591"   1438825526962
+"2376"   1438825526962
+"548"   1438825526978
+"2200"   1438825526978
+"509"   1438825526994
+"2044"   1438825526994
+"476"   1438825527010
+"1918"   1438825527011
+"450"   1438825527027
+"1820"   1438825527027
+"430"   1438825527043
+"1744"   1438825527043
+"415"   1438825527059
+"1689"   1438825527059
+"405"   1438825527075
+"1645"   1438825527075
+"386"   1438825527108
+"1569"   1438825527108
+"374"   1438825527124
+"1516"   1438825527124
+"364"   1438825527140
+"1477"   1438825527140
+"354"   1438825527156
+"1437"   1438825527156
+"343"   1438825527164
+"1392"   1438825527165
+"333"   1438825527181
+"1350"   1438825527181
+"322"   1438825527197
+"1311"   1438825527197
+"310"   1438825527229
+"1264"   1438825527230
+"299"   1438825527310
+"1223"   1438825527310
+"287"   1438825527375
+"1170"   1438825527375
+"275"   1438825527424
+"1124"   1438825527424
+"262"   1438825527472
+"1065"   1438825527472
+"248"   1438825527504
+"1008"   1438825527505
+"238"   1438825527537
+"968"   1438825527537
+"228"   1438825527570
+"925"   1438825527570
+"214"   1438825527602
+"869"   1438825527602
+"198"   1438825527634
+"804"   1438825527634
+"180"   1438825527667
+"725"   1438825527667
+"170"   1438825527683
+"686"   1438825527683
+"159"   1438825527699
+"640"   1438825527699
+"149"   1438825527715
+"598"   1438825527715
+"131"   1438825527748
+"530"   1438825527748
+"113"   1438825527780
+"450"   1438825527781
+"101"   1438825527796
+"402"   1438825527797
+"89"   1438825527804
+"349"   1438825527805
+"76"   1438825527821
+"296"   1438825527821
+"60"   1438825527837
+"226"   1438825527837
+"39"   1438825527853
+"129"   1438825527854
+"7"   1438825527870
+"1"   1438825527870
+"22"   1438825528409
+"100"   1438825528410
+"33"   1438825528415
+"145"   1438825528416
+"47"   1438825528431
+"208"   1438825528433
+"66"   1438825528448
+"290"   1438825528449
+"87"   1438825528465
+"382"   1438825528466
+"115"   1438825528482
+"502"   1438825528482
+"150"   1438825528498
+"655"   1438825528499
+"198"   1438825528516
+"868"   1438825528517
+"261"   1438825528533
+"1143"   1438825528533
+"337"   1438825528541
+"1459"   1438825528541
+"422"   1438825528557
+"1828"   1438825528558
+"522"   1438825528573
+"2245"   1438825528574
+"632"   1438825528590
+"2701"   1438825528590
+"746"   1438825528606
+"3176"   1438825528607
+"862"   1438825528623
+"3646"   1438825528623
+"965"   1438825528639
+"4039"   1438825528639
+"996"   1438825528655
+"4077"   1438825528655
+"986"   1438825528784
+"4015"   1438825528784
+"956"   1438825528801
+"3880"   1438825528801
+"910"   1438825528817
+"3671"   1438825528817
+"849"   1438825528833
+"3402"   1438825528833
+"772"   1438825528850
+"3076"   1438825528850
+"684"   1438825528865
+"2704"   1438825528866
+"587"   1438825528882
+"2296"   1438825528882
+"486"   1438825528898
+"1890"   1438825528898
+"396"   1438825528914
+"1538"   1438825528914
+"326"   1438825528930
+"1272"   1438825528931
+"274"   1438825528947
+"1078"   1438825528947
+"239"   1438825528966
+"952"   1438825528966
+"218"   1438825528980
+"877"   1438825528980
+"204"   1438825528995
+"824"   1438825528996
+"191"   1438825529012
+"764"   1438825529012
+"174"   1438825529028
+"696"   1438825529028
+"157"   1438825529044
+"622"   1438825529044
+"139"   1438825529061
+"550"   1438825529061
+"121"   1438825529069
+"473"   1438825529069
+"100"   1438825529085
+"386"   1438825529085
+"80"   1438825529101
+"310"   1438825529102
+"63"   1438825529118
+"239"   1438825529118
+"48"   1438825529134
+"182"   1438825529134
+"34"   1438825529150
+"127"   1438825529151
+"21"   1438825529166
+"74"   1438825529166
+"9"   1438825529183
+"24"   1438825529183
+"32"   1438825529312
+"155"   1438825529313
+"64"   1438825529328
+"297"   1438825529329
+"103"   1438825529345
+"462"   1438825529345
+"145"   1438825529361
+"640"   1438825529361
+"196"   1438825529378
+"855"   1438825529378
+"253"   1438825529394
+"1099"   1438825529394
+"315"   1438825529411
+"1355"   1438825529413
+"374"   1438825529427
+"1595"   1438825529427
+"421"   1438825529444
+"1762"   1438825529444
+"443"   1438825529460
+"1819"   1438825529460
+"402"   1438825529501
+"1602"   1438825529501
+"364"   1438825529517
+"1459"   1438825529517
+"345"   1438825529534
+"1401"   1438825529534
+"369"   1438825529600
+"1541"   1438825529600
+"402"   1438825529617
+"1678"   1438825529617
+"444"   1438825529633
+"1869"   1438825529633
+"487"   1438825529650
+"2032"   1438825529650
+"516"   1438825529666
+"2132"   1438825529668
+"499"   1438825529710
+"2005"   1438825529710
+"454"   1438825529726
+"1809"   1438825529726
+"412"   1438825529743
+"1653"   1438825529743
+"394"   1438825529759
+"1609"   1438825529759
+"410"   1438825529807
+"1706"   1438825529807
+"453"   1438825529823
+"1905"   1438825529823
+"505"   1438825529840
+"2121"   1438825529840
+"553"   1438825529856
+"2307"   1438825529856
+"585"   1438825529872
+"2420"   1438825529872
+"595"   1438825529888
+"2435"   1438825529888
+"548"   1438825529921
+"2185"   1438825529921
+"478"   1438825529937
+"1872"   1438825529937
+"397"   1438825529953
+"1544"   1438825529953
+"332"   1438825529969
+"1310"   1438825529969
+"307"   1438825529985
+"1251"   1438825529986
+"330"   1438825530018
+"1383"   1438825530018
+"368"   1438825530034
+"1546"   1438825530034
+"410"   1438825530050
+"1719"   1438825530050
+"457"   1438825530067
+"1915"   1438825530067
+"498"   1438825530083
+"2079"   1438825530083
+"532"   1438825530099
+"2204"   1438825530099
+"550"   1438825530115
+"2260"   1438825530115
+"537"   1438825530148
+"2169"   1438825530148
+"499"   1438825530164
+"1995"   1438825530164
+"451"   1438825530180
+"1797"   1438825530180
+"411"   1438825530196
+"1658"   1438825530197
+"401"   1438825530213
+"1640"   1438825530213
+"419"   1438825530237
+"1743"   1438825530237
+"457"   1438825530253
+"1910"   1438825530253
+"497"   1438825530269
+"2071"   1438825530270
+"530"   1438825530286
+"2196"   1438825530286
+"550"   1438825530303
+"2263"   1438825530303
+"511"   1438825530368
+"2049"   1438825530368
+"462"   1438825530384
+"1837"   1438825530384
+"417"   1438825530400
+"1671"   1438825530400
+"401"   1438825530416
+"1644"   1438825530417
+"437"   1438825530449
+"1841"   1438825530449
+"484"   1438825530465
+"2025"   1438825530466
+"522"   1438825530481
+"2165"   1438825530482
+"536"   1438825530498
+"2198"   1438825530498
+"513"   1438825530530
+"2072"   1438825530530
+"478"   1438825530547
+"1915"   1438825530547
+"435"   1438825530563
+"1739"   1438825530563
+"404"   1438825530579
+"1636"   1438825530579
+"419"   1438825530628
+"1745"   1438825530628
+"449"   1438825530645
+"1867"   1438825530645
+"476"   1438825530653
+"1977"   1438825530653
+"499"   1438825530669
+"2065"   1438825530669
+"513"   1438825530685
+"2106"   1438825530685
+"496"   1438825530734
+"2003"   1438825530734
+"466"   1438825530750
+"1874"   1438825530751
+"438"   1438825530766
+"1768"   1438825530767
+"459"   1438825530815
+"1917"   1438825530815
+"505"   1438825530831
+"2120"   1438825530831
+"560"   1438825530847
+"2349"   1438825530847
+"615"   1438825530864
+"2565"   1438825530864
+"645"   1438825530880
+"2655"   1438825530880
+"627"   1438825530912
+"2528"   1438825530912
+"575"   1438825530928
+"2288"   1438825530929
+"503"   1438825530945
+"1979"   1438825530945
+"429"   1438825530961
+"1691"   1438825530961
+"381"   1438825530977
+"1526"   1438825530977
+"368"   1438825530993
+"1506"   1438825530993
+"394"   1438825531025
+"1635"   1438825531026
+"416"   1438825531042
+"1729"   1438825531042
+"452"   1438825531058
+"1889"   1438825531058
+"492"   1438825531074
+"2060"   1438825531074
+"536"   1438825531090
+"2232"   1438825531090
+"564"   1438825531107
+"2330"   1438825531107
+"522"   1438825531155
+"2086"   1438825531155
+"460"   1438825531171
+"1808"   1438825531172
+"379"   1438825531188
+"1460"   1438825531188
+"291"   1438825531204
+"1105"   1438825531204
+"225"   1438825531221
+"876"   1438825531221
+"206"   1438825531229
+"840"   1438825531229
+"243"   1438825531262
+"1044"   1438825531262
+"305"   1438825531278
+"1323"   1438825531278
+"384"   1438825531294
+"1660"   1438825531295
+"483"   1438825531311
+"2080"   1438825531311
+"585"   1438825531327
+"2501"   1438825531327
+"682"   1438825531343
+"2883"   1438825531343
+"765"   1438825531360
+"3202"   1438825531360
+"813"   1438825531377
+"3359"   1438825531377
+"751"   1438825531426
+"3008"   1438825531426
+"674"   1438825531442
+"2672"   1438825531442
+"581"   1438825531459
+"2279"   1438825531459
+"490"   1438825531476
+"1920"   1438825531476
+"425"   1438825531485
+"1693"   1438825531485
+"403"   1438825531501
+"1642"   1438825531502
+"417"   1438825531518
+"1741"   1438825531518
+"478"   1438825531534
+"2034"   1438825531535
+"572"   1438825531551
+"2455"   1438825531551
+"691"   1438825531567
+"2957"   1438825531568
+"825"   1438825531584
+"3514"   1438825531584
+"947"   1438825531600
+"3993"   1438825531601
+"996"   1438825531617
+"4079"   1438825531617
