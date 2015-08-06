@@ -113,14 +113,14 @@ function updateHandlerGPS(data){
             }
         )
     );
-//    fs.appendFile(
-//        'GPSDATA.txt',
-//        '\n'+JSON.stringify(data),
-//        function (err) {
-//            if (err) throw err;
-//            console.log('logged');
-//        }
-//    );
+    fs.appendFile(
+        'GPSDATA.txt',
+        '\n'+data.Position.lat+ '   '+ data.Position.lon + '    ' + data.Position.alt + '   ' + data.Velocity,
+        function (err) {
+            if (err) throw err;
+            console.log('logged');
+        }
+    );
 }
 
 
