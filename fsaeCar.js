@@ -28,7 +28,6 @@ GPS.on(
 
 
 function updateHandler(data) {
-    var value;
     console.log('phidget state changed');
     console.log('data', data.value, '\n');
     data.boardType = 'IK888';
@@ -45,7 +44,7 @@ function updateHandler(data) {
 
 function updateHandlerGPS(data){
     console.log('phidget state changed');
-    console.log('data ',data);
+    console.log('data',data);
     data.boardType='PhidgetGPS';
     data.timeStamp=new Date().getTime();
     fs.appendFile(
@@ -74,12 +73,12 @@ function readyHandlerG() {
 
     GPS.on(
         'changed',
-        updateHandler
+        updateHandlerGPS
     );
 }
 
 function errorHandler(data){
-    console.log('error ', data);
+    console.log('Somethings not right... ', data);
 }
 
 /*
