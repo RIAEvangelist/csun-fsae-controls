@@ -28,14 +28,14 @@ GPS.on(
 
 
 function updateHandler(data) {
+    var value;
     console.log('phidget state changed');
-    console.log('data ', data, '\n');
-    console.log('data.value', value,'\n');
+    console.log('data', data.value, '\n');
     data.boardType = 'IK888';
     data.timeStamp = new Date().getTime();
     fs.appendFile(
         'message.txt',
-        '\n'+JSON.stringify(data),
+        '\n'+JSON.stringify(data.value,' ', data.timeStamp),
         function (err) {
             if (err)throw err;
             console.log('The "data to append" was appended to file!');
@@ -46,7 +46,7 @@ function updateHandler(data) {
 function updateHandlerGPS(data){
     console.log('phidget state changed');
     console.log('data ',data);
-    data.boardType='PhidgerGPS';
+    data.boardType='PhidgetGPS';
     data.timeStamp=new Date().getTime();
     fs.appendFile(
         'GPSDATA.txt',

@@ -1,14 +1,17 @@
+var phidget = require('phidgetapi').phidget;
+var fs = require('fs');
+
 var GPS=new phidget();
 
 GPS.on(
-    "log",
+    'log',
     function(data){
         console.log('log ',data);
     }
 );
 
 GPS.on(
-    "error",
+    'error',
     function(data){
         console.log('error ',data);
     }
