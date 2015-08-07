@@ -68,13 +68,11 @@ function readyHandlerG() {
 function updateHandlerGPS(data){
     
     switch(data.key){
-        case 'Position' :
+        case 'Position':
             var location=data.Position.split('/');
-            data.Position={
-                lat:Number(location[0]),
-                lon:Number(location[1]),
-                alt:Number(location[2])
-            };
+            data.Positionlat=Number(location[0]);
+            data.Positionlon=Number(location[1]);
+            data.Positionalt=Number(location[2]);
             break;
         case 'Velocity' :
             data.Velocity=Number(data.Velocity);
@@ -113,14 +111,25 @@ function updateHandlerGPS(data){
             }
         )
     );
-    fs.appendFile(
-        'GPSDATA.txt',
-        '\n'+data.Position.lat+ '   '+ data.Position.lon + '    ' + data.Position.alt + '   ' + data.Velocity,
-        function (err) {
-            if (err) throw err;
-            console.log('logged');
-        }
-    );
+    if(
+            JSON.stringify(data.Positionlat) != 'undefined' &&
+            JSON.stringify(data.Positionlon) != 'undefined' &&
+            JSON.stringify(data.Positionalt) != 'undefined' &&
+            JSON.stringify(data.Velocity) != 'undefined'
+    ){
+        fs.appendFile(
+            'GPSDATA.txt',
+                ' \n'+ JSON.stringify(data.Positionlat)+
+                '   ' +  JSON.stringify(data.Positionlon) +
+                '   ' +  JSON.stringify(data.Positionalt) +
+                '   ' +  JSON.stringify(data.Velocity)
+        );
+    };
+//        function (err) {
+//            if (err) throw err;
+//            console.log('logged');
+//        }
+
 }
 
 
