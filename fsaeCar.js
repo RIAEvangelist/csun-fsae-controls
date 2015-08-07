@@ -47,9 +47,7 @@ function updateHandler(data) {
         'message.txt',
         '\n'+data.key + '   '
         + data.value+ '   '
-        + data.hour + ' '
-        + date.min + ' '
-        + date.sec
+        + data.timeStamp.getMilliseconds
     );
 }
 
