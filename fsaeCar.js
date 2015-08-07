@@ -4,8 +4,104 @@ var util = require('util');
 
 var IK888 = new phidget();
 var GPS = new phidget();
-var filepath;
 
+var GPSFile='logs/GPS'+new Date().getTime()+'.csv';
+var sensorFile='logs/Sensor'+new Date().getTime()+'.csv';
+
+var GPSData={
+    header:['time','lat','lon','alt','heading','velocity'],
+    data:{}
+};
+
+var sensorData={
+    header:['time','Front Right','Front Left','Rear Right','Rear Left','throttle'],
+    data:{}
+};
+
+IK888Map=[
+    'frontLeft',    //0
+    'frontRight',   //1
+    'rearLeft',     //2
+    'rearRight',    //3
+    'throttle'      //4
+];
+
+fs.writeFile(
+    GPSFile,
+    GPSData.header+'\n',
+    fileErr
+);
+
+fs.writeFile(
+    sensorFile,
+    sensorData.header+'\n',
+    fileErr
+);
+
+function fileErr(err){
+    if(!err){
+        return;
+    }
+
+    try{
+        fs.writeFile(
+            'logs/err.txt',
+            JSON.stringify(err)+'\n'
+        );
+    }catch(err){
+        //damn... thats a bad err...
+    }
+}
+
+function logGPS(){
+    var csvData='';
+    for(var i in GPSData.data){
+        var data=GPSData.data[i];
+        csvData+=
+            [
+                data.time,
+                data.lat,
+                data.lon,
+                data.alt,
+                data.heading,
+                data.velocity
+            ]+
+            '\n'
+        ;
+    }
+
+    GPSData.data={};
+
+    fs.appendFile(
+        GPSFile,
+        csvData
+    );
+}
+
+function logSensor(){
+    var csvData='';
+    for(var i in sensorData.data){
+        var data=sensorData.data[i];
+        csvData+=
+            [
+                data.time,
+                data.frontRight,
+                data.frontLeft,
+                data.rearRight,
+                data.rearLeft,
+                data.throttle
+            ]+
+            '\n'
+        ;
+    }
+
+    GPSData.data={};
+
+    fs.appendFile(
+        GPSFile,
+        csvData
+    );
+}
 
 IK888.on(
     "error",
@@ -14,12 +110,12 @@ IK888.on(
 
 IK888.on(
     'phidgetReady',
-    readyHandlerA
+    sensorReady
 );
 
 GPS.on(
     'phidgetReady',
-    readyHandlerG
+    GPSReady
 );
 
 GPS.on(
@@ -28,58 +124,87 @@ GPS.on(
 );
 
 /* Analog input function and handlers*/
-
-function readyHandlerA() {
+function sensorReady() {
     console.log('phidget A ready');
     console.log(IK888.data);
 
     IK888.on(
         'changed',
-        updateHandler
+        updateSensor
+    );
+
+    setInterval(
+        logSensor,
+        1000
     );
 }
-
-function updateHandler(data) {
-    console.log('phidget state changed');
-    console.log('data', data.value, '\n');
-    data.boardType = 'IK888';
-    data.timeStamp = new Date().getTime();
-    fs.appendFile(
-        'message.txt',
-        '\n'+data.key + '   '
-        + data.value+ '   '
-        + data.timeStamp
-    );
-}
-
-
 
 /* GPS handler and functions*/
-
-function readyHandlerG() {
-    console.log('GPS Online');
-    console.log(GPS.data);
-
+function GPSReady() {
     GPS.on(
         'changed',
-        updateHandlerGPS
+        updateGPS
+    );
+    setInterval(
+        logGPS,
+        1000
     );
 }
 
-function updateHandlerGPS(data){
+function updateSensor(data) {
+    data.boardType = 'IK888';
+    data.timestamp = new Date().getTime();
+
+    if(!sensorData.data[data.timestamp]){
+        sensorData.data[data.timestamp]={};
+    }
+
+    var row=sensorData.data[data.timestamp];
+    row.time=data.timestamp;
+
+    row[
+        IK888Map[
+            data.key
+        ]
+    ]=Number(data.value);
+}
+
+function updateGPS(data){
+    if(data.timestamp){
+        data.GPSTime=data.timestamp;
+    }
+
+    data.timestamp=new Date().getTime();
+
+    if(!GPSData.data[data.timestamp]){
+        GPSData.data[data.timestamp]={};
+    }
+
+    var row=GPSData.data[data.timestamp];
+    row.time=data.timestamp;
+    if(data.GPSTime){
+        row.time=data.GPSTime;
+    }
     
     switch(data.key){
         case 'Position':
             var location=data.Position.split('/');
-            data.Positionlat=Number(location[0]);
-            data.Positionlon=Number(location[1]);
-            data.Positionalt=Number(location[2]);
+            data.Position={
+                lat:Number(location[0]),
+                lon:Number(location[1]),
+                alt:Number(location[2])
+            }
+            row.lat=data.Position.lat;
+            row.lon=data.Position.lon;
+            row.alt=data.Position.alt;
             break;
         case 'Velocity' :
             data.Velocity=Number(data.Velocity);
+            row.velocity=data.Velocity;
             break;
         case 'Heading' :
             data.Heading=Number(data.Heading);
+            row.heading=data.Heading;
             break;
         case "DateTime":
             var dateInfo = data.DateTime.split('/');
@@ -95,33 +220,9 @@ function updateHandlerGPS(data){
                 min:Number(dateInfo[5]),
                 sec:Number(dateInfo[6])
             };
+            row.time=data.GPSTime;
             break;
     }
-    data.boardType='PhidgetGPS';
-    
-    if(!data.timestamp){
-        data.timestamp=new Date().getTime();
-    }
-    
-    console.log(
-        util.inspect(
-            data, 
-            { 
-                depth: 5,
-                colors:true
-            }
-        )
-    );
-    // Weird "undefined" messages are attached to output from GPS
-    fs.appendFile(
-        'GPSDATA.txt',
-            ' \n'+ data.Positionlat+
-            '   ' +  data.Positionlon +
-            '   ' +  data.Positionalt +
-            '   ' +  data.Velocity +
-            '   ' + data.timestamp
-        );
-
 }
 
 
