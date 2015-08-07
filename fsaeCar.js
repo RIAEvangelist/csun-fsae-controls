@@ -45,7 +45,7 @@ function updateHandler(data) {
     data.timeStamp = new Date().getTime();
     fs.appendFile(
         'message.txt',
-        '\n'+data.key);
+        '\n'+data.key + '   ' + data.value+ '   ' +data.timeStamp);
 }
 
 
