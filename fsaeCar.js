@@ -114,7 +114,8 @@ function updateHandlerGPS(data){
             ' \n'+ data.Positionlat+
             '   ' +  data.Positionlon +
             '   ' +  data.Positionalt +
-            '   ' +  data.Velocity
+            '   ' +  data.Velocity +
+            '   ' + data.timestamp
         );
 
 }
