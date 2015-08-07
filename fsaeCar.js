@@ -45,13 +45,10 @@ function updateHandler(data) {
     data.timeStamp = new Date().getTime();
     fs.appendFile(
         'message.txt',
-        '\n'+data.key,
-        function (err) {
-            if (err)throw err;
-            console.log('logged');
-        }
-    );
+        '\n'+data.key);
 }
+
+
 
 /* GPS handler and functions*/
 
@@ -111,24 +108,14 @@ function updateHandlerGPS(data){
             }
         )
     );
-    if(
-            JSON.stringify(data.Positionlat) != 'undefined' &&
-            JSON.stringify(data.Positionlon) != 'undefined' &&
-            JSON.stringify(data.Positionalt) != 'undefined' &&
-            JSON.stringify(data.Velocity) != 'undefined'
-    ){
-        fs.appendFile(
-            'GPSDATA.txt',
-                ' \n'+ JSON.stringify(data.Positionlat)+
-                '   ' +  JSON.stringify(data.Positionlon) +
-                '   ' +  JSON.stringify(data.Positionalt) +
-                '   ' +  JSON.stringify(data.Velocity)
+    // Weird "undefined" messages are attached to output from GPS
+    fs.appendFile(
+        'GPSDATA.txt',
+            ' \n'+ data.Positionlat+
+            '   ' +  data.Positionlon +
+            '   ' +  data.Positionalt +
+            '   ' +  data.Velocity
         );
-    };
-//        function (err) {
-//            if (err) throw err;
-//            console.log('logged');
-//        }
 
 }
 
