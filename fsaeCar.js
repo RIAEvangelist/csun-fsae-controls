@@ -4,6 +4,7 @@ var util = require('util');
 
 var IK888 = new phidget();
 var GPS = new phidget();
+var filepath;
 
 
 IK888.on(
