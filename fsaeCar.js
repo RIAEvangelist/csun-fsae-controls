@@ -6,8 +6,8 @@ var IK888 = new phidget();
 var GPS = new phidget();
 
 //creates datafiles
-var GPSFile='logs/GPS'+new Date().getTime()+'.csv';
-var sensorFile='logs/Sensor'+new Date().getTime()+'.csv';
+var GPSFile='logs/GPS'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
+var sensorFile='logs/Sensor'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
 
 //Creates headers for GPS datafile
 var GPSData={
@@ -147,7 +147,7 @@ function sensorReady() {
     setInterval(
         logSensor,
         1000
-    );
+    ); // logs data into file ever n (1000) miliseconds
 }
 
 // GPS initializer and getting timestamp from GPS, smart move
