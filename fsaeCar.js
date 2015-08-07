@@ -5,19 +5,23 @@ var util = require('util');
 var IK888 = new phidget();
 var GPS = new phidget();
 
+//creates datafiles
 var GPSFile='logs/GPS'+new Date().getTime()+'.csv';
 var sensorFile='logs/Sensor'+new Date().getTime()+'.csv';
 
+//Creates headers for GPS datafile
 var GPSData={
     header:['time','lat','lon','alt','heading','velocity'],
     data:{}
 };
 
+//Creates headers for Sensor datafile
 var sensorData={
     header:['time','Front Right','Front Left','Rear Right','Rear Left','throttle'],
     data:{}
 };
 
+//Mapping of where pots belong
 IK888Map=[
     'frontLeft',    //0
     'frontRight',   //1
@@ -26,18 +30,21 @@ IK888Map=[
     'throttle'      //4
 ];
 
+//Writing header into file ... working
 fs.writeFile(
     GPSFile,
     GPSData.header+'\n',
     fileErr
 );
 
+//Writing header into file ... working
 fs.writeFile(
     sensorFile,
     sensorData.header+'\n',
     fileErr
 );
 
+//error handler, idk how this works -Mario
 function fileErr(err){
     if(!err){
         return;
@@ -53,8 +60,9 @@ function fileErr(err){
     }
 }
 
+//logging gps data and writing it into the csv file using a for loop.
 function logGPS(){
-    var csvData='';
+    var csvData='';//dummy variable
     for(var i in GPSData.data){
         var data=GPSData.data[i];
         csvData+=
@@ -75,11 +83,12 @@ function logGPS(){
     fs.appendFile(
         GPSFile,
         csvData
-    );
+    );//writing happens right here into the GPS file
 }
 
+//logging gps data and writing it into the csv file using a for loop.
 function logSensor(){
-    var csvData='';
+    var csvData=''; //same dummy variable, is it more efficent to do it this way?
     for(var i in sensorData.data){
         var data=sensorData.data[i];
         csvData+=
@@ -98,11 +107,13 @@ function logSensor(){
     GPSData.data={};
 
     fs.appendFile(
-        GPSFile,
+        sensorFile, //writing happens here into sensor file.
         csvData
     );
 }
 
+
+//Initializing and initial error checks
 IK888.on(
     "error",
     errorHandler
@@ -123,7 +134,7 @@ GPS.on(
     errorHandler
 );
 
-/* Analog input function and handlers*/
+//sensor initializer and logging data into console. will get rid of that feature later
 function sensorReady() {
     console.log('phidget A ready');
     console.log(IK888.data);
@@ -139,7 +150,7 @@ function sensorReady() {
     );
 }
 
-/* GPS handler and functions*/
+// GPS initializer and getting timestamp from GPS, smart move
 function GPSReady() {
     GPS.on(
         'changed',
@@ -169,6 +180,8 @@ function updateSensor(data) {
     ]=Number(data.value);
 }
 
+//getting data form GPS, this function got really long.
+//whart is row doing with the data?
 function updateGPS(data){
     if(data.timestamp){
         data.GPSTime=data.timestamp;
