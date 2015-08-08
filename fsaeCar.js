@@ -52,7 +52,7 @@ function fileErr(err){
 
     try{
         fs.writeFile(
-            'logs/err.txt',
+            '/media/9016-4EF8/logs/err.txt',
             JSON.stringify(err)+'\n'
         );
     }catch(err){
