@@ -6,8 +6,8 @@ var IK888 = new phidget();
 var GPS = new phidget();
 
 //creates datafiles
-var GPSFile='logs/GPS'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
-var sensorFile='logs/Sensor'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
+var GPSFile='/media/9016-4EF8/logs/GPS'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
+var sensorFile='/media/9016-4EF8/logs/Sensor'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
 
 //Creates headers for GPS datafile
 var GPSData={
