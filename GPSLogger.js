@@ -44,6 +44,7 @@ function GPSReady() {
 function updateGPS(data){
 
     data.timestamp = new Date().getTime();
+    GPSData.timeStamp = data.timestamp
     switch(data.key){
         case 'Position':
             var location=data.Position.split('/');
@@ -52,27 +53,51 @@ function updateGPS(data){
                 lon:Number(location[1]),
                 alt:Number(location[2])
             }
+            GPSData.lat = data.Position.lat;
+            GPSData.lon = data.Position.lon;
+            GPSData.alt = data.Position.alt;
             break;
         case 'Velocity' :
             data.Velocity=Number(data.Velocity);
+            GPSData.velocity = data.Velocity;
             break;
         case 'Heading' :
             data.Heading=Number(data.Heading);
+            GPSData.heading = data.Heading;
             break;
     };
 
 }
 
 
-function logGPS(data) {
+function logGPS() {
 
-    console.log(data);
+    console.log(GPSData);
 
-//    fs.appendFile('logs/GPSData.txt', 'lol hello :)', function (err) {
-//        if (err) throw err;
-//        console.log('The "data to append" was appended to file!');
-//    }
-//                 );
+    fs.appendFile('logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
+        if (err) throw err;
+    }
+                 );
+
+        fs.appendFile('logs/GPSData.txt', GPSData.lat + ' ', function (err) {
+        if (err) throw err;
+    }
+                 );
+
+        fs.appendFile('logs/GPSData.txt', GPSData.lon + ' ', function (err) {
+        if (err) throw err;
+    }
+                 );
+
+        fs.appendFile('logs/GPSData.txt', GPSData.alt + ' ', function (err) {
+        if (err) throw err;
+    }
+                 );
+
+        fs.appendFile('logs/GPSData.txt', GPSData.velocity + '\n' , function (err) {
+        if (err) throw err;
+    }
+                 );
 
 }
 
