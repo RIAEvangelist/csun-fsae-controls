@@ -79,22 +79,22 @@ function logGPS() {
     }
                  );
 
-        fs.appendFile('logs/GPSData.txt', GPSData.lat + ' ', function (err) {
+        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lat + ' ', function (err) {
         if (err) throw err;
     }
                  );
 
-        fs.appendFile('logs/GPSData.txt', GPSData.lon + ' ', function (err) {
+        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lon + ' ', function (err) {
         if (err) throw err;
     }
                  );
 
-        fs.appendFile('logs/GPSData.txt', GPSData.alt + ' ', function (err) {
+        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.alt + ' ', function (err) {
         if (err) throw err;
     }
                  );
 
-        fs.appendFile('logs/GPSData.txt', GPSData.velocity + '\n' , function (err) {
+        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.velocity + '\n' , function (err) {
         if (err) throw err;
     }
                  );
