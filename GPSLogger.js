@@ -43,9 +43,8 @@ function GPSReady() {
 
 function updateGPS(data){
 
-    //data.timestamp = new Date().getTime();
-    //GPSData.timeStamp = data.timestamp
-    console.log(data);
+
+    //console.log(data);
     switch(data.key){
         case 'Position':
             var location=data.Position.split('/');
@@ -69,7 +68,7 @@ function updateGPS(data){
         case 'DateTime' :
 
             //Insert stuff here
-
+            console.log(data.DateTime);
             break;
     };
 
@@ -77,8 +76,6 @@ function updateGPS(data){
 
 
 function logGPS() {
-
-    console.log(GPSData);
 
 //    fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
 //        if (err) throw err;
