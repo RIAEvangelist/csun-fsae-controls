@@ -6,12 +6,33 @@ var IK888 = new phidget();
 var GPS = new phidget();
 
 //creates datafiles
-var GPSFile='/media/9016-4EF8/logs/GPS'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
-var sensorFile='/media/9016-4EF8/logs/Sensor'+new Date().getTime()+'.csv'; //change 'logs/GPS' to w/e directory to log data
+var logConfig={
+    isDev:false, //if true logs to dev paths instead of prod paths
+    prod:{
+        GPSFile     :'/media/9016-4EF8/logs/GPS'+new Date().getTime()+'.csv',
+        sensorFile  :'/media/9016-4EF8/logs/Sensor'+new Date().getTime()+'.csv',
+        error       :'/media/9016-4EF8/logs/err'+new Date().getTime()+'.txt'
+    },
+    dev:{
+        GPSFile     :'./logs/GPS'+new Date().getTime()+'.csv',
+        sensorFile  :'./logs/Sensor'+new Date().getTime()+'.csv',
+        error       :'./logs/err'+new Date().getTime()+'.txt'
+    }
+}
+
+var logs=logConfig[
+    (logConfig.isDev)? 'dev' : 'prod' //grabs correct path object from config based on the isDev key:value
+];
+
+//Store GPS timing info here and don't log until we know the system timestamp offset from GPS timestamp.
+var timing={
+    offset:false,
+    currentGPSTime:false
+}
 
 //Creates headers for GPS datafile
 var GPSData={
-    header:['time','lat','lon','alt','heading','velocity'],
+    header:['timestamp','lat','lon','alt','heading','velocity'],
     data:{}
 };
 
@@ -32,42 +53,51 @@ IK888Map=[
 
 //Writing header into file ... working
 fs.writeFile(
-    GPSFile,
+    logs.GPSFile,
     GPSData.header+'\n',
     fileErr
 );
 
 //Writing header into file ... working
 fs.writeFile(
-    sensorFile,
+    logs.sensorFile,
     sensorData.header+'\n',
     fileErr
 );
 
 //error handler, idk how this works -Mario
+//if an error is triggered writing one of the other files, it gets logged here
 function fileErr(err){
     if(!err){
         return;
     }
 
-    try{
-        fs.writeFile(
-            '/media/9016-4EF8/logs/err.txt',
-            JSON.stringify(err)+'\n'
-        );
-    }catch(err){
-        //damn... thats a bad err...
-    }
+
+    fs.writeFile(
+        logs.error,
+        JSON.stringify(err)+'\n',
+        fatalErr
+    );
 }
+
+function fatalErr(err){
+    if(!err){
+        return;
+    }
+
+
+    console.log(err);
+}
+
 
 //logging gps data and writing it into the csv file using a for loop.
 function logGPS(){
-    var csvData='';//dummy variable
+    var csvData='';//cache variable
     for(var i in GPSData.data){
         var data=GPSData.data[i];
         csvData+=
             [
-                data.time,
+                data.timestamp,
                 data.lat,
                 data.lon,
                 data.alt,
@@ -81,19 +111,21 @@ function logGPS(){
     GPSData.data={};
 
     fs.appendFile(
-        GPSFile,
+        logs.GPSFile,
         csvData
     );//writing happens right here into the GPS file
 }
 
 //logging gps data and writing it into the csv file using a for loop.
 function logSensor(){
-    var csvData=''; //same dummy variable, is it more efficent to do it this way?
+    var csvData=''; //same cache variable, is it more efficent to do it this way?
+    //its not same var different. the var is assigned inside the scope of the function.
+    //when the function ends, the scope dies as does everything in it. the dead stuff is then garbage collected.
     for(var i in sensorData.data){
         var data=sensorData.data[i];
         csvData+=
             [
-                data.time,
+                data.timestamp,
                 data.frontRight,
                 data.frontLeft,
                 data.rearRight,
@@ -107,7 +139,7 @@ function logSensor(){
     GPSData.data={};
 
     fs.appendFile(
-        sensorFile, //writing happens here into sensor file.
+        logs.sensorFile, //writing happens here into sensor file.
         csvData
     );
 }
@@ -134,10 +166,17 @@ GPS.on(
     errorHandler
 );
 
-//sensor initializer and logging data into console. will get rid of that feature later
 function sensorReady() {
-    console.log('phidget A ready');
-    console.log(IK888.data);
+    console.log('Sensors Ready');
+    console.log(
+        util.inspect(
+            IK888.data,
+            {
+                depth:5,
+                colors:true
+            }
+        )
+    );
 
     IK888.on(
         'changed',
@@ -147,31 +186,46 @@ function sensorReady() {
     setInterval(
         logSensor,
         1000
-    ); // logs data into file ever n (1000) miliseconds
+    );
+
+    console.log('IK888 ready and running');
 }
 
-// GPS initializer and getting timestamp from GPS, smart move
 function GPSReady() {
+    console.log('GPS Ready');
+    console.log(
+        util.inspect(
+            GPS.data,
+            {
+                depth:5,
+                colors:true
+            }
+        )
+    );
     GPS.on(
         'changed',
         updateGPS
     );
     setInterval(
         logGPS,
-        1000
+        5000 //GPS can be slow causing empty lines in the CSV, so give it more time
     );
 }
 
 function updateSensor(data) {
-    data.boardType = 'IK888';
-    data.timestamp = new Date().getTime();
-
-    if(!sensorData.data[data.timestamp]){
-        sensorData.data[data.timestamp]={};
+    if(!timing.offset){
+        return;
     }
 
-    var row=sensorData.data[data.timestamp];
-    row.time=data.timestamp;
+    var timestamp = new Date().getTime()+timing.offset;
+
+
+    if(!sensorData.data[timestamp]){
+        sensorData.data[timestamp]={};
+    }
+
+    var row=sensorData.data[timestamp];
+    row.timestamp=timestamp;
 
     row[
         IK888Map[
@@ -182,23 +236,32 @@ function updateSensor(data) {
 
 //getting data form GPS, this function got really long.
 //whart is row doing with the data?
+/*
+
+GPSData.data[data.timestamp] is:
+GPSData:{
+    14828blah:{
+        ... gps stuff
+    }
+
+this all happens so fast the time stamp stays the same. so we use it as a "row" identifier for the csv
+
+its just putting as much info into each timestamp key:value as possible so it can be converted to csv later.
+
+*/
+
 function updateGPS(data){
-    if(data.timestamp){
-        data.GPSTime=data.timestamp;
-    }
-
-    data.timestamp=new Date().getTime();
-
-    if(!GPSData.data[data.timestamp]){
-        GPSData.data[data.timestamp]={};
-    }
-
-    var row=GPSData.data[data.timestamp];
-    row.time=data.timestamp;
-    if(data.GPSTime){
-        row.time=data.GPSTime;
+    if(!timing.currentGPSTime && data.key!='DateTime'){
+        return;
     }
     
+    var timestamp=new Date().getTime();
+    if(!GPSData.data[timing.currentGPSTime]){
+        GPSData.data[timing.currentGPSTime]={};
+    }
+
+    var row=GPSData.data[timing.currentGPSTime];
+
     switch(data.key){
         case 'Position':
             var location=data.Position.split('/');
@@ -232,9 +295,20 @@ function updateGPS(data){
                 day:Number(dateInfo[3]),
                 hour:Number(dateInfo[4]),
                 min:Number(dateInfo[5]),
-                sec:Number(dateInfo[6])
+                sec:Number(dateInfo[6]),
+                timestamp:date.getTime()
             };
-            row.time=data.GPSTime;
+            timing.currentGPSTime=data.DateTime.timestamp;
+            if(!timing.offset){
+                timing.offset=data.DateTime.timestamp-timestamp;
+            }
+
+            if(!GPSData.data[timing.currentGPSTime]){
+                GPSData.data[timing.currentGPSTime]={};
+            }
+            row=GPSData.data[timing.currentGPSTime];
+            row.timestamp=data.DateTime.timestamp;
+
             break;
     }
 }
