@@ -1,4 +1,4 @@
-//Libraries
+//Modules thise are not libraries, but rather node.js modules they could include libraries, Classes, objects, native functionality etc.
 var phidget = require('phidgetapi').phidget;
 var fs = require('fs');
 

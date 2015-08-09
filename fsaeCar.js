@@ -5,7 +5,7 @@ var util = require('util');
 var IK888 = new phidget();
 var GPS = new phidget();
 
-//creates datafiles
+//Log path configurations
 var logConfig={
     isDev:false, //if true logs to dev paths instead of prod paths
     prod:{
@@ -20,6 +20,7 @@ var logConfig={
     }
 }
 
+//Grab which log paths to use
 var logs=logConfig[
     (logConfig.isDev)? 'dev' : 'prod' //grabs correct path object from config based on the isDev key:value
 ];
@@ -30,19 +31,19 @@ var timing={
     currentGPSTime:false
 }
 
-//Creates headers for GPS datafile
+//CSV caching objects used to store data until next log write cycle is executed saves disk||SD IO
+
 var GPSData={
-    header:['timestamp','lat','lon','alt','heading','velocity'],
+    header:['timestamp','lat','lon','alt','heading','velocity'],//Creates headers for GPS CSV
     data:{}
 };
 
-//Creates headers for Sensor datafile
 var sensorData={
-    header:['time','Front Right','Front Left','Rear Right','Rear Left','throttle'],
+    header:['time','Front Right','Front Left','Rear Right','Rear Left','throttle'],//Creates headers for Sensor CSV
     data:{}
 };
 
-//Mapping of where pots belong
+//Mapping of where analog inputs belong
 IK888Map=[
     'frontLeft',    //0
     'frontRight',   //1
@@ -51,14 +52,14 @@ IK888Map=[
     'throttle'      //4
 ];
 
-//Writing header into file ... working
+//Prepping new CSVs with headers each time the script is run
+
 fs.writeFile(
     logs.GPSFile,
     GPSData.header+'\n',
     fileErr
 );
 
-//Writing header into file ... working
 fs.writeFile(
     logs.sensorFile,
     sensorData.header+'\n',
@@ -90,7 +91,8 @@ function fatalErr(err){
 }
 
 
-//logging gps data and writing it into the csv file using a for loop.
+//Writing CSV files
+
 function logGPS(){
     var csvData='';//cache variable
     for(var i in GPSData.data){
@@ -113,10 +115,9 @@ function logGPS(){
     fs.appendFile(
         logs.GPSFile,
         csvData
-    );//writing happens right here into the GPS file
+    );
 }
 
-//logging gps data and writing it into the csv file using a for loop.
 function logSensor(){
     var csvData=''; //same cache variable, is it more efficent to do it this way?
     //its not same var different. the var is assigned inside the scope of the function.
@@ -139,13 +140,14 @@ function logSensor(){
     GPSData.data={};
 
     fs.appendFile(
-        logs.sensorFile, //writing happens here into sensor file.
+        logs.sensorFile,
         csvData
     );
 }
 
 
-//Initializing and initial error checks
+//Binding Phidget event listeners
+
 IK888.on(
     "error",
     errorHandler
@@ -165,6 +167,8 @@ GPS.on(
     "error",
     errorHandler
 );
+
+//Phidgets event handles
 
 function sensorReady() {
     console.log('Sensors Ready');
