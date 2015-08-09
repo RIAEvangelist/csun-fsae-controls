@@ -219,6 +219,7 @@ function updateGPS(data){
             data.Heading=Number(data.Heading);
             row.heading=data.Heading;
             break;
+            break;
         case "DateTime":
             var dateInfo = data.DateTime.split('/');
             date = new Date();
