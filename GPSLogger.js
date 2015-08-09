@@ -42,7 +42,6 @@ function GPSReady() {
 }
 
 function updateGPS(data){
-    console.log('look here!!');
 
     switch(data.key){
         case 'Position':
@@ -52,6 +51,11 @@ function updateGPS(data){
                 lon:Number(location[1]),
                 alt:Number(location[2])
             }
+            console.log( data.Position.lat + '  ' + data.Position.lon + '   ' + data.Position.alt);
+
+            fs.appendFile( 'logs/GPSData.txt' , data.Position.lat + '  ' + data.Position.lon + '   ' + data.Position.alt,
+                          function (err) { if (err) throw err;}
+                          );
             break;
         case 'Velocity' :
             data.Velocity=Number(data.Velocity);
@@ -65,11 +69,11 @@ function updateGPS(data){
 
 function logGPS(data) {
 
-    fs.appendFile('logs/GPSData.txt', 'lol hello :)', function (err) {
-        if (err) throw err;
-        console.log('The "data to append" was appended to file!');
-    }
-                 );
+//    fs.appendFile('logs/GPSData.txt', 'lol hello :)', function (err) {
+//        if (err) throw err;
+//        console.log('The "data to append" was appended to file!');
+//    }
+//                 );
 
 }
 
