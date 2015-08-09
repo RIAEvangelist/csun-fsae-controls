@@ -29,3 +29,8 @@ This project is licensed with the [DBAD](https://github.com/RIAEvangelist/csun-f
             error       :'./logs/err'+new Date().getTime()+'.txt'
         }
     }
+
+#Timing
+The BBB does not have a real time clock to keep track of time while powered off. This leads to time shifts which could create issues in your data telemetry.
+
+For this we have used the Phidgets GPS to capture time from the GPS satelites and determine the offset time from the local system. No logging will commense until a time differential has been determined.
