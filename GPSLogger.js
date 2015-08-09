@@ -66,9 +66,22 @@ function updateGPS(data){
             GPSData.heading = data.Heading;
             break;
         case 'DateTime' :
-
-            //Insert stuff here
-            console.log(data.DateTime);
+            var dateInfo = data.DateTime.split('/');
+                date = new Date();
+                date.setUTCFullYear(dateInfo[0], dateInfo[1]-1, dateInfo[2]);
+                date.setUTCHours(dateInfo[3], dateInfo[4], dateInfo[5], dateInfo[6]);
+                data.DateTime={
+                    full:date,
+                    year:Number(dateInfo[0]),
+                    month:Number(dateInfo[1]),
+                    day:Number(dateInfo[3]),
+                    hour:Number(dateInfo[4]),
+                    min:Number(dateInfo[5]),
+                    sec:Number(dateInfo[6]),
+                    milisec:Number(dateInfo[7]),
+                    timestamp:date.getTime()
+            };
+            console.log(data.DateTime.milisec);
             break;
     };
 
