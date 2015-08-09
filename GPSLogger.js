@@ -43,8 +43,9 @@ function GPSReady() {
 
 function updateGPS(data){
 
-    data.timestamp = new Date().getTime();
-    GPSData.timeStamp = data.timestamp
+    //data.timestamp = new Date().getTime();
+    //GPSData.timeStamp = data.timestamp
+    console.log(data);
     switch(data.key){
         case 'Position':
             var location=data.Position.split('/');
@@ -65,6 +66,11 @@ function updateGPS(data){
             data.Heading=Number(data.Heading);
             GPSData.heading = data.Heading;
             break;
+        case 'DateTime' :
+
+            //Insert stuff here
+
+            break;
     };
 
 }
@@ -74,30 +80,30 @@ function logGPS() {
 
     console.log(GPSData);
 
-    fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
-        if (err) throw err;
-    }
-                 );
-
-        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lat + ' ', function (err) {
-        if (err) throw err;
-    }
-                 );
-
-        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lon + ' ', function (err) {
-        if (err) throw err;
-    }
-                 );
-
-        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.alt + ' ', function (err) {
-        if (err) throw err;
-    }
-                 );
-
-        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.velocity + '\n' , function (err) {
-        if (err) throw err;
-    }
-                 );
+//    fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
+//        if (err) throw err;
+//    }
+//                 );
+//
+//        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lat + ' ', function (err) {
+//        if (err) throw err;
+//    }
+//                 );
+//
+//        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.lon + ' ', function (err) {
+//        if (err) throw err;
+//    }
+//                 );
+//
+//        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.alt + ' ', function (err) {
+//        if (err) throw err;
+//    }
+//                 );
+//
+//        fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.velocity + '\n' , function (err) {
+//        if (err) throw err;
+//    }
+//                 );
 
 }
 
