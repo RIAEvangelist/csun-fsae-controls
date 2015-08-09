@@ -74,7 +74,7 @@ function logGPS() {
 
     console.log(GPSData);
 
-    fs.appendFile('logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
+    fs.appendFile('/media/9016-4EF8/logs/GPSData.txt', GPSData.timeStamp + ' ', function (err) {
         if (err) throw err;
     }
                  );
