@@ -81,7 +81,7 @@ function updateGPS(data){
                     milisec:Number(dateInfo[7]),
                     timestamp:date.getTime()
             };
-            console.log(data.DateTime.milisec);
+            console.log(data.DateTime);
             break;
     };
 
