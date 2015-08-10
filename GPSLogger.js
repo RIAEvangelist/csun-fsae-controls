@@ -78,7 +78,6 @@ function updateGPS(data){
                     hour:Number(dateInfo[4]),
                     min:Number(dateInfo[5]),
                     sec:Number(dateInfo[6]),
-                    milisec:Number(dateInfo[7]),
                     timestamp:date.getTime()
             };
             console.log(data.DateTime);
