@@ -1,4 +1,5 @@
-var phidget = require('phidgetapi').phidget;
+var phidget = require('../phidgetapi.js').phidget;
+var Phidget = require('../phidgetapi.js').GPS;
 var fs = require('fs');
 var util = require('util');
 
