@@ -1,4 +1,4 @@
-var Phidget = require('../phidgetapi').InterfaceKit;
+var Phidget = require('../phidgetapi.js').InterfaceKit;
 var fs = require('fs');
 var util = require('util');
 
