@@ -1,8 +1,8 @@
-var Phidget = require('phidgetapi');
+var Phidget = require('phidgetapi').InterfaceKit;
 var fs = require('fs');
 var util = require('util');
 console.log(Phidget);
-var IK=new Phidget;
+var IK = new Phidget;
 
 IK.observeOutputs(outputs);
 IK.observeInputs(inputs);
