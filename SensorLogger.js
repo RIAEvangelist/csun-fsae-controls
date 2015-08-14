@@ -39,7 +39,7 @@ function rawSensors(changes){
         //see specific info about each change
         //console.log(change);
     }
-        //lbs =  (0.13 * Math.pow( 2.718282, (0.0009 * IK.rawSensors[0]))  );  Exponential Curve fit, f(x) > 0.1 lbs
+        //lbs =  (0.13 * Math.pow( 2.718282, (0.0009 * IK.rawSensors[0]))  );  //Exponential Curve fit, f(x) > 0.1 lbs
         lbs =  ((0.00000077912 * (IK.rawSensors[0] * IK.rawSensors[0] )) - (0.00247485588 * IK.rawSensors[0]) + 2.52329520725);  // Poly Curve fit
                                                                                                             // 0.5lbs < f(x) < 1.7 lbs
         //see updated IK data after all change
