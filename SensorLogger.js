@@ -16,38 +16,16 @@ IK.phidget.on(
 IK.phidget.connect();
 
 function init(){
-    //do some initial set up here... like blinking an led.
-//    setInterval(
-//        function(){
-//            if(IK.outputs[0]==0){
-//                IK.outputs[0]=1;
-//            }else{
-//                IK.outputs[0]=0;
-//            }
-//        },
-//        1000
-//    );
 }
 
 
 function sensors(changes){
-
     for(var i in changes){
         var change=changes[i];
         //see specific info about each change
         //console.log(change);
     }
-
-
-    //see updated IK data after all changes
-    //console.log(JSON.stringify(IK.sensors[0]));
-
-//    do something with the sensor info like turn another LED on.
-//    if(IK.sensors[7]>500){
-//        IK.outputs[1]=1;
-//    }else{
-//        IK.outputs[1]=0;
-//    }
+}
 }
 
 function rawSensors(changes){
@@ -59,8 +37,9 @@ function rawSensors(changes){
         //see specific info about each change
         //console.log(change);
     }
-        lbs =  (0.13 * Math.pow( 2.718282, (0.0009 * IK.rawSensors[0]))  );
-
+        //lbs =  (0.13 * Math.pow( 2.718282, (0.0009 * IK.rawSensors[0]))  );  Exponential Curve fit, f(x) > 0.1 lbs
+        lbs = (0.00000077912 * (IK.rawSensors[0])^2) - (0.00247485588 * IK.rawSensors[0]) + 2.52329520725;  // Poly Curve fit
+                                                                                                            // 0.5lbs < f(x) < 1.7 lbs
         //see updated IK data after all change
         console.log(lbs);
 
@@ -69,21 +48,9 @@ function rawSensors(changes){
 function outputs(changes){
     for(var i in changes){
         var change=changes[i];
-        //see specific info about each change
-        //console.log(change);
     }
 
-    //see updated IK data after all changes
-   // console.log('Outputs',IK.outputs);
 }
 
 function inputs(changes){
-//    for(var i in changes){
-//        var change=changes[i];
-//        //see specific info about each change
-//        //console.log(change);
-//    }
-//
-//    //see updated IK data after all changes
-//    console.log('Inputs',IK.inputs[0]);
 }
