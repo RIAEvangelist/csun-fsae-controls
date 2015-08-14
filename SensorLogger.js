@@ -62,6 +62,6 @@ function inputs(changes){
     }
 
     //see updated IK data after all changes
-    console.log('Inputs',IK.inputs);
+    //console.log('Inputs',IK.inputs);
 }
 
