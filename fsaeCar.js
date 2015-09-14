@@ -5,6 +5,7 @@ var util = require('util');
 
 var IK888 = new phidget();
 var GPS = new phidget();
+var hello = 0;
 
 //Log path configurations
 var logConfig={
@@ -259,7 +260,7 @@ function updateGPS(data){
     if(!timing.currentGPSTime && data.key!='DateTime'){
         return;
     }
-    
+
     var timestamp=new Date().getTime();
     if(!GPSData.data[timing.currentGPSTime]){
         GPSData.data[timing.currentGPSTime]={};
